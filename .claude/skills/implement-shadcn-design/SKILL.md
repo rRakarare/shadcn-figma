@@ -23,7 +23,7 @@ This skill provides a structured workflow for translating Figma designs into pro
 
 ## shadcn Design Tokens Reference
 
-**CRITICAL:** All implementations must exclusively use these shadcn design tokens. Never use hardcoded color values, spacing pixels, or custom CSS variables.
+**CRITICAL:** All implementations must exclusively use these shadcn design tokens. Never use hardcoded color values, spacing pixels, custom CSS variables, or `calc()` expressions.
 
 ### Color Tokens
 
@@ -45,12 +45,27 @@ This skill provides a structured workflow for translating Figma designs into pro
 
 ### Radius Tokens
 
-| Token | Value |
-|-------|-------|
-| `radius-sm` | `calc(var(--radius) - 4px)` |
-| `radius-md` | `calc(var(--radius) - 2px)` |
-| `radius-lg` | `var(--radius)` |
-| `radius-xl` | `calc(var(--radius) + 4px)` |
+**IMPORTANT:** Only use these Tailwind class names. Never use `calc()` expressions or raw CSS variables in code.
+
+| Tailwind Class | Usage |
+|----------------|-------|
+| `rounded-sm` | Small radius for subtle rounding |
+| `rounded-md` | Medium radius (default for most components) |
+| `rounded-lg` | Large radius for cards, dialogs |
+| `rounded-xl` | Extra large radius for prominent elements |
+| `rounded-full` | Fully rounded (circles, pills, avatars) |
+
+**FORBIDDEN - Never use these in code:**
+```tsx
+// ❌ WRONG - Do not use calc expressions
+className="rounded-[calc(var(--radius)-2px)]"
+style={{ borderRadius: 'calc(var(--radius) - 4px)' }}
+
+// ✅ CORRECT - Use Tailwind classes only
+className="rounded-md"
+className="rounded-lg"
+className="rounded-full"
+```
 
 ### Typography Tokens
 
@@ -108,7 +123,32 @@ get_design_context(fileKey=":fileKey", nodeId="1-2")
 1. Run `get_metadata(fileKey=":fileKey", nodeId="1-2")` for the node map
 2. Fetch specific child nodes individually with `get_design_context`
 
-### Step 3: Capture Visual Reference
+### Step 3: Output Summary & Get Screenshot
+
+**IMPORTANT:** Do NOT print the full raw Figma MCP response to the user. Instead, provide a brief, structured summary.
+
+**3a. Output format:**
+```
+📐 Design Analysis Complete
+
+**Components detected:**
+- Button (Primary variant, Medium size)
+- Input (2 instances)
+- Card container
+- Icon: ArrowRight
+
+**Layout:** Vertical stack, 16px gap
+**Dimensions:** 400×320px
+```
+
+**Rules for output:**
+- List only the identified UI components and their variants
+- Summarize layout direction and spacing
+- Note any icons or images found
+- Do NOT dump raw JSON, node trees, or verbose metadata
+- Keep the summary under 15 lines
+
+**3b. Get screenshot:**
 
 Run `get_screenshot` for visual validation:
 
@@ -118,9 +158,24 @@ get_screenshot(fileKey=":fileKey", nodeId="1-2")
 
 Keep this screenshot accessible throughout implementation as the source of truth.
 
-### Step 4: Identify and Install shadcn Components
+### Step 4: Ask for Component Name
 
-**4a. Map Figma components to shadcn components:**
+**MANDATORY:** After analyzing the design, ask the user for the component name.
+
+**Prompt the user:**
+> "What would you like to name this component? Based on the design, I'd suggest `[SuggestedName]` — does that work, or would you prefer something else?"
+
+**Naming suggestions should be:**
+- Based on what you discovered in the Figma design (e.g., a login form → `LoginForm`, a pricing card → `PricingCard`)
+- PascalCase (e.g., `HeroSection`, `PricingCard`, `LoginForm`)
+- Descriptive of the component's purpose
+- Following React component naming conventions
+
+**Wait for user confirmation before proceeding to implementation.**
+
+### Step 5: Identify and Install shadcn Components
+
+**5a. Map Figma components to shadcn components:**
 
 | Figma Component Name | shadcn Component |
 |---------------------|------------------|
@@ -166,7 +221,7 @@ Keep this screenshot accessible throughout implementation as the source of truth
 3. If a matching or similar name exists, proceed with that component
 4. If no match exists, compose the UI using multiple shadcn primitives
 
-**4b. Query shadcn MCP for component details:**
+**5b. Query shadcn MCP for component details:**
 
 ```
 shadcn_get_component(component="button")
@@ -177,7 +232,7 @@ This returns:
 - Available variants and props
 - Required dependencies
 
-**4c. Check if component is installed:**
+**5c. Check if component is installed:**
 
 If the component is not installed in the project, install it via shadcn MCP:
 
@@ -185,7 +240,7 @@ If the component is not installed in the project, install it via shadcn MCP:
 shadcn_add_component(component="button")
 ```
 
-**4d. Map Figma variants to shadcn variants:**
+**5d. Map Figma variants to shadcn variants:**
 
 | Figma Variant | shadcn Variant |
 |---------------|----------------|
@@ -200,15 +255,15 @@ shadcn_add_component(component="button")
 | Large, LG | `size="lg"` |
 | Icon | `size="icon"` |
 
-### Step 5: Translate to shadcn Conventions
+### Step 6: Translate to shadcn Conventions
 
-**5a. Component Usage:**
+**6a. Component Usage:**
 
 - Import components from `@/components/ui/[component]`
-- Use the exact variant props identified in Step 4d
+- Use the exact variant props identified in Step 5d
 - Compose complex UIs using multiple shadcn components
 
-**5b. Color Mapping (Figma → shadcn):**
+**6b. Color Mapping (Figma → shadcn):**
 
 | Figma Color Usage | shadcn Class |
 |-------------------|--------------|
@@ -222,7 +277,7 @@ shadcn_add_component(component="button")
 | Hover backgrounds | `hover:bg-accent` |
 | Focus rings | `focus:ring-ring` |
 
-**5c. Spacing Mapping:**
+**6c. Spacing Mapping:**
 
 Use Tailwind spacing scale. Map Figma pixel values to nearest Tailwind class:
 
@@ -236,24 +291,30 @@ Use Tailwind spacing scale. Map Figma pixel values to nearest Tailwind class:
 | 24px | `p-6`, `m-6`, `gap-6` |
 | 32px | `p-8`, `m-8`, `gap-8` |
 
-**5d. Border Radius:**
+**6d. Border Radius:**
 
-| Figma Radius | shadcn Class |
-|--------------|--------------|
+| Figma Radius | Tailwind Class |
+|--------------|----------------|
+| 0px | `rounded-none` |
 | Small (2-4px) | `rounded-sm` |
 | Medium (6px) | `rounded-md` |
 | Large (8px) | `rounded-lg` |
 | Extra large (12px+) | `rounded-xl` |
-| Full/pill | `rounded-full` |
+| Full/pill/circle | `rounded-full` |
 
-**5e. Typography:**
+**NEVER use:**
+- `rounded-[Xpx]` arbitrary values
+- `calc(var(--radius) - Xpx)` expressions
+- Inline styles for border radius
+
+**6e. Typography:**
 
 Use shadcn's typography conventions:
 - Headings: `text-xl font-semibold`, `text-lg font-medium`, etc.
 - Body: `text-sm`, `text-base`
 - Muted: `text-sm text-muted-foreground`
 
-### Step 6: Download Required Assets
+### Step 7: Download Required Assets
 
 Download any images, icons, or SVGs from the Figma MCP server.
 
@@ -263,7 +324,9 @@ Download any images, icons, or SVGs from the Figma MCP server.
 - Map Figma icons to Lucide equivalents when possible
 - DO NOT import additional icon packages unless absolutely necessary
 
-### Step 7: Implement the Component
+### Step 8: Implement the Component
+
+Use the component name confirmed by the user in Step 4.
 
 **Structure:**
 
@@ -271,11 +334,11 @@ Download any images, icons, or SVGs from the Figma MCP server.
 import { ComponentName } from "@/components/ui/component-name"
 import { LucideIcon } from "lucide-react"
 
-interface MyComponentProps {
+interface [UserChosenName]Props {
   // Define props with TypeScript
 }
 
-export function MyComponent({ ...props }: MyComponentProps) {
+export function [UserChosenName]({ ...props }: [UserChosenName]Props) {
   return (
     // Use shadcn components with proper variants
     // Use only shadcn design tokens for styling
@@ -284,24 +347,61 @@ export function MyComponent({ ...props }: MyComponentProps) {
 ```
 
 **Rules:**
+- Use the component name the user confirmed in Step 4
 - Never use hardcoded colors (no `#hex`, `rgb()`, or color names)
 - Never use hardcoded pixel values for design tokens
+- Never use `calc()` expressions for radius or spacing
+- Always use Tailwind utility classes (`rounded-md`, `rounded-lg`, etc.)
 - Always use shadcn's `cn()` utility for conditional classes
 - Extend shadcn components rather than recreating functionality
 
-### Step 8: Validate Against Figma
+### Step 9: Validate Against Figma
 
 **Validation Checklist:**
 
+- [ ] Component uses the name confirmed by the user
 - [ ] All shadcn components correctly identified and installed
 - [ ] Variants match Figma specifications
 - [ ] Layout matches (spacing, alignment, sizing)
 - [ ] Typography matches using shadcn conventions
 - [ ] Colors use only shadcn design tokens
+- [ ] Border radius uses only Tailwind classes (no calc expressions)
 - [ ] Interactive states work (hover, active, disabled, focus)
 - [ ] Responsive behavior follows Figma constraints
 - [ ] Icons render correctly (preferably from Lucide)
 - [ ] No hardcoded design values in code
+
+### Step 10: Ask About Component Placement
+
+**MANDATORY:** After the component is built and validated, ask the user where to place it.
+
+**Prompt the user:**
+> "✅ Component `[ComponentName]` is ready!
+>
+> Where would you like me to place this component?
+> - Add it to a specific route/page? (e.g., `/dashboard`, `/home`)
+> - Place it in a specific file? (provide the path)
+> - Just keep it in `components/` for now?
+>
+> Let me know the route or file path, and I'll integrate it for you."
+
+**Based on user response:**
+
+1. **If user specifies a route** (e.g., `/dashboard`):
+   - Find or create the corresponding page file
+   - Import the new component
+   - Add it to the appropriate location in the JSX
+
+2. **If user specifies a file path** (e.g., `src/app/dashboard/page.tsx`):
+   - Open the file
+   - Add the import statement
+   - Insert the component where specified (or ask for exact placement)
+
+3. **If user says "just components" or declines**:
+   - Leave the component in `@/components/[ComponentName].tsx`
+   - Confirm the final location to the user
+
+**Wait for user response before making any file changes.**
 
 ---
 
@@ -315,6 +415,8 @@ export function MyComponent({ ...props }: MyComponentProps) {
 className="bg-primary text-primary-foreground"
 className="border-border rounded-lg"
 className="text-muted-foreground"
+className="rounded-full" // for circular elements
+className="rounded-md"   // standard radius
 ```
 
 **FORBIDDEN:**
@@ -323,7 +425,10 @@ className="text-muted-foreground"
 className="bg-[#3b82f6]"
 className="text-[#1f2937]"
 className="border-[#e5e7eb]"
+className="rounded-[8px]"
+className="rounded-[calc(var(--radius)-2px)]"
 style={{ backgroundColor: '#3b82f6' }}
+style={{ borderRadius: 'calc(var(--radius) - 4px)' }}
 ```
 
 ### Component Organization
@@ -363,6 +468,22 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
 
 ---
 
+## Workflow Summary Checklist
+
+Before starting any implementation, ensure you complete these steps in order:
+
+- [ ] **Step 1:** Parse Figma URL to get file key and node ID
+- [ ] **Step 2:** Fetch Figma design context
+- [ ] **Step 3:** Output concise summary + get screenshot
+- [ ] **Step 4:** Ask user for component name (suggest one based on design) — **WAIT FOR RESPONSE**
+- [ ] **Step 5:** Identify and install shadcn components
+- [ ] **Step 6-7:** Translate to shadcn conventions and download assets
+- [ ] **Step 8:** Implement using the confirmed component name
+- [ ] **Step 9:** Validate against Figma screenshot
+- [ ] **Step 10:** Ask user where to place the component — **WAIT FOR RESPONSE**
+
+---
+
 ## Examples
 
 ### Example 1: Implementing a Button from Figma
@@ -373,44 +494,58 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
 
 1. **Parse URL:** `fileKey="kL9xQn2VwM8pYrTb4ZcHjF"`, `nodeId="42-15"`
 
-2. **Fetch design context:**
-   ```
-   get_design_context(fileKey="kL9xQn2VwM8pYrTb4ZcHjF", nodeId="42-15")
-   ```
-   Response indicates: Component="Button", Variant="Primary", Size="Medium", has left icon
+2. **Fetch design context**
 
-3. **Get screenshot:**
+3. **Output summary:**
    ```
-   get_screenshot(fileKey="kL9xQn2VwM8pYrTb4ZcHjF", nodeId="42-15")
+   📐 Design Analysis Complete
+   
+   **Components detected:**
+   - Button (Primary variant, Medium size)
+   - Icon: ArrowRight (right position)
+   
+   **Layout:** Horizontal, 8px gap
+   **Dimensions:** 140×40px
    ```
 
-4. **Query shadcn:**
-   ```
-   shadcn_get_component(component="button")
-   ```
-   Map: Figma "Primary" → shadcn `variant="default"`, "Medium" → `size="default"`
+4. **Get screenshot for reference**
 
-5. **Install if needed:**
+5. **Ask for name:**
+   > "What would you like to name this component? Based on the design, I'd suggest `CTAButton` — does that work?"
+   
+   *User confirms: "Yes, CTAButton is fine"*
+
+6. **Query shadcn and map:**
+   Figma "Primary" → shadcn `variant="default"`, "Medium" → `size="default"`
+
+7. **Install if needed:**
    ```
    shadcn_add_component(component="button")
    ```
 
-6. **Implement:**
+8. **Implement:**
    ```tsx
    import { Button } from "@/components/ui/button"
    import { ArrowRight } from "lucide-react"
 
-   export function PrimaryButton() {
+   export function CTAButton() {
      return (
        <Button variant="default" size="default">
-         <ArrowRight className="mr-2 h-4 w-4" />
          Get Started
+         <ArrowRight className="ml-2 h-4 w-4" />
        </Button>
      )
    }
    ```
 
-7. **Validate:** Compare against screenshot for visual parity
+9. **Validate against screenshot**
+
+10. **Ask about placement:**
+    > "✅ Component `CTAButton` is ready! Where would you like me to place this component?"
+    
+    *User responds: "Add it to the hero section on the home page"*
+    
+    → Open `src/app/page.tsx`, import `CTAButton`, add to hero section
 
 ---
 
@@ -422,25 +557,37 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
 
 1. **Parse URL:** `fileKey="pR8mNv5KqXzGwY2JtCfL4D"`, `nodeId="10-5"`
 
-2. **Fetch design context:**
-   ```
-   get_design_context(fileKey="pR8mNv5KqXzGwY2JtCfL4D", nodeId="10-5")
-   ```
-   Response indicates: Component="Card" with header, content, and footer sections
+2. **Fetch design context**
 
-3. **Get screenshot:**
+3. **Output summary:**
    ```
-   get_screenshot(fileKey="pR8mNv5KqXzGwY2JtCfL4D", nodeId="10-5")
+   📐 Design Analysis Complete
+   
+   **Components detected:**
+   - Card container
+   - CardHeader with title
+   - CardDescription (muted text)
+   - CardContent area
+   - CardFooter with 2 Buttons (Outline + Default)
+   
+   **Layout:** Vertical stack, 16px padding, 12px internal gaps
+   **Dimensions:** 380×280px
    ```
 
-4. **Query and install shadcn components:**
+4. **Get screenshot**
+
+5. **Ask for name:**
+   > "What would you like to name this component? Based on the design, I'd suggest `FeatureCard` — does that work?"
+   
+   *User confirms*
+
+6. **Install all required components:**
    ```
-   shadcn_get_component(component="card")
    shadcn_add_component(component="card")
    shadcn_add_component(component="button")
    ```
 
-5. **Implement:**
+7. **Implement:**
    ```tsx
    import {
      Card,
@@ -454,7 +601,7 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
 
    export function FeatureCard() {
      return (
-       <Card>
+       <Card className="w-full max-w-md">
          <CardHeader>
            <CardTitle>Card Title</CardTitle>
            <CardDescription className="text-muted-foreground">
@@ -473,7 +620,10 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
    }
    ```
 
-6. **Validate:** Ensure spacing, typography, and colors match screenshot
+8. **Validate against screenshot**
+
+9. **Ask about placement:**
+   > "✅ Component `FeatureCard` is ready! Where would you like me to place this component?"
 
 ---
 
@@ -483,28 +633,33 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
 
 **Workflow:**
 
-1. **Parse URL:** `fileKey="xY7zKm3NpQrStWv8BcDf2E"`, `nodeId="5-12"`
+1. **Parse URL and fetch metadata for complex form**
 
-2. **Fetch metadata (complex form):**
-   ```
-   get_metadata(fileKey="xY7zKm3NpQrStWv8BcDf2E", nodeId="5-12")
-   ```
-   Identify child nodes: email input, password input, checkbox, button
+2. **Fetch design context for child nodes**
 
-3. **Fetch design context for each:**
+3. **Output summary:**
    ```
-   get_design_context(fileKey="xY7zKm3NpQrStWv8BcDf2E", nodeId="5-13") // Email
-   get_design_context(fileKey="xY7zKm3NpQrStWv8BcDf2E", nodeId="5-14") // Password
-   get_design_context(fileKey="xY7zKm3NpQrStWv8BcDf2E", nodeId="5-15") // Checkbox
-   get_design_context(fileKey="xY7zKm3NpQrStWv8BcDf2E", nodeId="5-16") // Button
-   ```
-
-4. **Get screenshot:**
-   ```
-   get_screenshot(fileKey="xY7zKm3NpQrStWv8BcDf2E", nodeId="5-12")
+   📐 Design Analysis Complete
+   
+   **Components detected:**
+   - Card (container)
+   - Input × 2 (Email, Password)
+   - Label × 2
+   - Checkbox with label ("Remember me")
+   - Button (Primary, full-width)
+   
+   **Layout:** Vertical stack, 16px gaps
+   **Dimensions:** 400×320px
    ```
 
-5. **Install all required components:**
+4. **Get screenshot**
+
+5. **Ask for name:**
+   > "What would you like to name this component? Based on the design, I'd suggest `LoginForm` — does that work?"
+   
+   *User confirms*
+
+6. **Install all required components:**
    ```
    shadcn_add_component(component="card")
    shadcn_add_component(component="input")
@@ -513,7 +668,7 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
    shadcn_add_component(component="button")
    ```
 
-6. **Implement:**
+7. **Implement:**
    ```tsx
    import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
    import { Input } from "@/components/ui/input"
@@ -559,7 +714,14 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
    }
    ```
 
-7. **Validate:** Check all spacing, input styles, and button variants match
+8. **Validate against screenshot**
+
+9. **Ask about placement:**
+   > "✅ Component `LoginForm` is ready! Where would you like me to place this component?"
+   
+   *User responds: "Put it at /login route"*
+   
+   → Create or update `src/app/login/page.tsx` with the component
 
 ---
 
@@ -592,9 +754,27 @@ export function CustomButton({ className, ...props }: CustomButtonProps) {
 <Button className={cn("custom-token-based-styles")}>
 ```
 
+### Issue: Figma has non-standard border radius
+
+**Solution:** Map to the nearest Tailwind class. Never use arbitrary values:
+- 2-4px → `rounded-sm`
+- 5-7px → `rounded-md`  
+- 8-10px → `rounded-lg`
+- 12px+ → `rounded-xl`
+- Circle/pill → `rounded-full`
+
 ---
 
 ## Best Practices
+
+### Always Fetch First, Then Ask
+
+The correct order is:
+1. Fetch Figma design data
+2. Analyze and summarize
+3. THEN ask for component name (with an informed suggestion)
+
+Never ask for a component name before you know what the design contains.
 
 ### Always Query shadcn First
 
@@ -616,6 +796,10 @@ Never modify files in `@/components/ui/`. Create wrapper components in `@/compon
 
 When component or variant mappings aren't obvious, add comments explaining the Figma-to-shadcn translation.
 
+### Always Offer Placement
+
+After every component implementation, ask where to place it. Don't leave the user wondering what to do next.
+
 ---
 
 ## Quick Reference: Figma to shadcn Mapping
@@ -625,9 +809,29 @@ When component or variant mappings aren't obvious, add comments explaining the F
 | Fill color | `bg-{token}` class |
 | Text color | `text-{token}` class |
 | Border color | `border-{token}` class |
-| Border radius | `rounded-{size}` class |
+| Border radius | `rounded-{sm\|md\|lg\|xl\|full}` class |
 | Shadow | `shadow-{size}` class |
 | Font family | `font-{family}` class |
 | Spacing | Tailwind spacing scale |
 | Component name | Map to shadcn component |
 | Variant property | Map to shadcn variant prop |
+
+---
+
+## Output Guidelines Summary
+
+**DO:**
+- Fetch Figma data BEFORE suggesting a component name
+- Provide concise component summaries (under 15 lines)
+- List only detected UI components and variants
+- Ask for component name after analyzing the design
+- Ask about placement after finishing
+- Use only Tailwind utility classes for styling
+
+**DON'T:**
+- Ask for component name before fetching Figma data
+- Dump raw Figma JSON or node trees
+- Print verbose metadata
+- Use `calc()` expressions for radius
+- Use arbitrary Tailwind values like `rounded-[8px]`
+- Skip the naming or placement questions

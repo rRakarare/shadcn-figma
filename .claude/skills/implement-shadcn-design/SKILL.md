@@ -125,9 +125,9 @@ get_design_context(fileKey=":fileKey", nodeId="1-2")
 
 ### Step 3: Output Summary & Get Screenshot
 
-**IMPORTANT:** Do NOT print the full raw Figma MCP response to the user. Instead, provide a brief, structured summary.
+Provide a brief, structured summary (under 15 lines). **Do NOT dump raw JSON or verbose metadata.**
 
-**3a. Output format:**
+**Example format:**
 ```
 📐 Design Analysis Complete
 
@@ -141,35 +141,37 @@ get_design_context(fileKey=":fileKey", nodeId="1-2")
 **Dimensions:** 400×320px
 ```
 
-**Rules for output:**
-- List only the identified UI components and their variants
-- Summarize layout direction and spacing
-- Note any icons or images found
-- Do NOT dump raw JSON, node trees, or verbose metadata
-- Keep the summary under 15 lines
-
-**3b. Get screenshot:**
-
-Run `get_screenshot` for visual validation:
-
-```
-get_screenshot(fileKey=":fileKey", nodeId="1-2")
-```
-
-Keep this screenshot accessible throughout implementation as the source of truth.
+Get screenshot with `get_screenshot(fileKey=":fileKey", nodeId="1-2")` and keep it as visual reference throughout implementation.
 
 ### Step 4: Ask for Component Name
 
-**MANDATORY:** After analyzing the design, ask the user for the component name.
+**MANDATORY:** After analyzing the design, ask the user for the component name using the AskUserQuestion tool.
 
-**Prompt the user:**
-> "What would you like to name this component? Based on the design, I'd suggest `[SuggestedName]` — does that work, or would you prefer something else?"
+**Use AskUserQuestion with:**
+- Suggest a name based on the Figma design (e.g., login form → `LoginForm`, pricing card → `PricingCard`)
+- Allow user to select your suggestion or provide their own name
+- Use PascalCase following React conventions
 
-**Naming suggestions should be:**
-- Based on what you discovered in the Figma design (e.g., a login form → `LoginForm`, a pricing card → `PricingCard`)
-- PascalCase (e.g., `HeroSection`, `PricingCard`, `LoginForm`)
-- Descriptive of the component's purpose
-- Following React component naming conventions
+**Example:**
+```
+AskUserQuestion({
+  questions: [{
+    question: "What would you like to name this component?",
+    header: "Name",
+    multiSelect: false,
+    options: [
+      {
+        label: "LoginForm (Recommended)",
+        description: "Suggested name based on the design analysis"
+      },
+      {
+        label: "Use a different name",
+        description: "Enter your own component name"
+      }
+    ]
+  }]
+})
+```
 
 **Wait for user confirmation before proceeding to implementation.**
 
@@ -257,62 +259,13 @@ shadcn_add_component(component="button")
 
 ### Step 6: Translate to shadcn Conventions
 
-**6a. Component Usage:**
-
 - Import components from `@/components/ui/[component]`
 - Use the exact variant props identified in Step 5d
-- Compose complex UIs using multiple shadcn components
-
-**6b. Color Mapping (Figma → shadcn):**
-
-| Figma Color Usage | shadcn Class |
-|-------------------|--------------|
-| Primary/brand color | `bg-primary text-primary-foreground` |
-| Secondary color | `bg-secondary text-secondary-foreground` |
-| Background | `bg-background` |
-| Text/foreground | `text-foreground` |
-| Muted/disabled | `text-muted-foreground` |
-| Borders | `border-border` |
-| Error/danger | `bg-destructive text-destructive-foreground` |
-| Hover backgrounds | `hover:bg-accent` |
-| Focus rings | `focus:ring-ring` |
-
-**6c. Spacing Mapping:**
-
-Use Tailwind spacing scale. Map Figma pixel values to nearest Tailwind class:
-
-| Figma Pixels | Tailwind Class |
-|--------------|----------------|
-| 4px | `p-1`, `m-1`, `gap-1` |
-| 8px | `p-2`, `m-2`, `gap-2` |
-| 12px | `p-3`, `m-3`, `gap-3` |
-| 16px | `p-4`, `m-4`, `gap-4` |
-| 20px | `p-5`, `m-5`, `gap-5` |
-| 24px | `p-6`, `m-6`, `gap-6` |
-| 32px | `p-8`, `m-8`, `gap-8` |
-
-**6d. Border Radius:**
-
-| Figma Radius | Tailwind Class |
-|--------------|----------------|
-| 0px | `rounded-none` |
-| Small (2-4px) | `rounded-sm` |
-| Medium (6px) | `rounded-md` |
-| Large (8px) | `rounded-lg` |
-| Extra large (12px+) | `rounded-xl` |
-| Full/pill/circle | `rounded-full` |
-
-**NEVER use:**
-- `rounded-[Xpx]` arbitrary values
-- `calc(var(--radius) - Xpx)` expressions
-- Inline styles for border radius
-
-**6e. Typography:**
-
-Use shadcn's typography conventions:
-- Headings: `text-xl font-semibold`, `text-lg font-medium`, etc.
-- Body: `text-sm`, `text-base`
-- Muted: `text-sm text-muted-foreground`
+- Apply design tokens from the **shadcn Design Tokens Reference** section above
+- Map Figma colors to semantic tokens (primary, secondary, muted, destructive, etc.)
+- Use Tailwind spacing scale (p-1 to p-8, m-1 to m-8, gap-1 to gap-8)
+- Use Tailwind border radius classes (`rounded-sm`, `rounded-md`, `rounded-lg`, `rounded-xl`, `rounded-full`)
+- **Never use** arbitrary values `[Xpx]` or `calc()` expressions
 
 ### Step 7: Download Required Assets
 
@@ -373,98 +326,33 @@ export function [UserChosenName]({ ...props }: [UserChosenName]Props) {
 
 ### Step 10: Ask About Component Placement
 
-**MANDATORY:** After the component is built and validated, ask the user where to place it.
+**MANDATORY:** After component is built and validated, ask where to place it.
 
-**Prompt the user:**
-> "✅ Component `[ComponentName]` is ready!
->
-> Where would you like me to place this component?
-> - Add it to a specific route/page? (e.g., `/dashboard`, `/home`)
-> - Place it in a specific file? (provide the path)
-> - Just keep it in `components/` for now?
->
-> Let me know the route or file path, and I'll integrate it for you."
+**Prompt:**
+> "✅ Component `[ComponentName]` is ready! Where would you like me to place this component?
+> - Specific route/page? (e.g., `/dashboard`)
+> - Specific file path?
+> - Keep it in `components/` for now?"
 
-**Based on user response:**
+**Then:**
+- Route specified → Find/create page file, import and add component
+- File path specified → Open file, add import, insert component
+- "Just components" → Leave in `@/components/[ComponentName].tsx`
 
-1. **If user specifies a route** (e.g., `/dashboard`):
-   - Find or create the corresponding page file
-   - Import the new component
-   - Add it to the appropriate location in the JSX
-
-2. **If user specifies a file path** (e.g., `src/app/dashboard/page.tsx`):
-   - Open the file
-   - Add the import statement
-   - Insert the component where specified (or ask for exact placement)
-
-3. **If user says "just components" or declines**:
-   - Leave the component in `@/components/[ComponentName].tsx`
-   - Confirm the final location to the user
-
-**Wait for user response before making any file changes.**
+**Wait for user response before making file changes.**
 
 ---
 
 ## Implementation Rules
 
-### Strict Token Usage
+### Core Principles
 
-**ALLOWED:**
-```tsx
-// shadcn design token classes
-className="bg-primary text-primary-foreground"
-className="border-border rounded-lg"
-className="text-muted-foreground"
-className="rounded-full" // for circular elements
-className="rounded-md"   // standard radius
-```
-
-**FORBIDDEN:**
-```tsx
-// Hardcoded values - NEVER USE
-className="bg-[#3b82f6]"
-className="text-[#1f2937]"
-className="border-[#e5e7eb]"
-className="rounded-[8px]"
-className="rounded-[calc(var(--radius)-2px)]"
-style={{ backgroundColor: '#3b82f6' }}
-style={{ borderRadius: 'calc(var(--radius) - 4px)' }}
-```
-
-### Component Organization
-
-- Place custom components in `@/components/` (not in `@/components/ui/`)
-- shadcn primitives remain in `@/components/ui/`
-- Follow project's file naming conventions
-
-### Extending shadcn Components
-
-When a shadcn component needs customization:
-
-```tsx
-import { Button, type ButtonProps } from "@/components/ui/button"
-import { cn } from "@/lib/utils"
-
-interface CustomButtonProps extends ButtonProps {
-  // Additional props
-}
-
-export function CustomButton({ className, ...props }: CustomButtonProps) {
-  return (
-    <Button
-      className={cn("your-additional-classes", className)}
-      {...props}
-    />
-  )
-}
-```
-
-### Code Quality Standards
-
-- TypeScript types for all component props
-- JSDoc comments for exported components
-- Use `cn()` for class merging
-- Prefer composition over customization
+1. **Use shadcn design tokens exclusively** - Never hardcode colors, use `bg-primary`, `text-foreground`, etc.
+2. **Use Tailwind utilities only** - `rounded-md` instead of `rounded-[8px]` or `calc()` expressions
+3. **Place custom components in `@/components/`** - Keep `@/components/ui/` for shadcn primitives only
+4. **Extend with `cn()` utility** - For conditional/merged classes
+5. **TypeScript all props** - Define interfaces for component props
+6. **Prefer composition** - Combine shadcn primitives rather than recreating functionality
 
 ---
 
@@ -727,78 +615,26 @@ Before starting any implementation, ensure you complete these steps in order:
 
 ## Common Issues and Solutions
 
-### Issue: Figma component has no direct shadcn equivalent
-
-**Solution:** Compose from multiple shadcn primitives or create a custom component using shadcn's design tokens exclusively.
-
-### Issue: Figma colors don't map to shadcn tokens
-
-**Solution:** Map to the semantically closest token:
-- Brand colors → `primary`
-- Secondary/subtle → `secondary` or `muted`
-- Success states → `primary` (or extend theme)
-- Error states → `destructive`
-
-### Issue: Figma uses custom icons not in Lucide
-
-**Solution:** Download the SVG from Figma and create a custom icon component. Use `currentColor` for fill to respect shadcn color tokens.
-
-### Issue: Spacing doesn't match exactly
-
-**Solution:** Use the nearest Tailwind spacing class. Pixel-perfect spacing is less important than consistent token usage. Document any notable deviations.
-
-### Issue: shadcn component doesn't have the exact variant
-
-**Solution:** Extend the component using `cn()` and shadcn tokens:
-```tsx
-<Button className={cn("custom-token-based-styles")}>
-```
-
-### Issue: Figma has non-standard border radius
-
-**Solution:** Map to the nearest Tailwind class. Never use arbitrary values:
-- 2-4px → `rounded-sm`
-- 5-7px → `rounded-md`  
-- 8-10px → `rounded-lg`
-- 12px+ → `rounded-xl`
-- Circle/pill → `rounded-full`
+| Issue | Solution |
+|-------|----------|
+| No direct shadcn equivalent | Compose from multiple primitives using design tokens |
+| Colors don't map to tokens | Map semantically: brand→`primary`, subtle→`muted`, errors→`destructive` |
+| Custom icons (not in Lucide) | Download SVG from Figma, use `currentColor` for fill |
+| Spacing mismatch | Use nearest Tailwind class—token consistency > pixel perfection |
+| Missing variant | Extend with `cn()` and shadcn tokens: `<Button className={cn("...")}` |
+| Non-standard radius | Map to nearest: 2-4px→`sm`, 5-7px→`md`, 8-10px→`lg`, 12px+→`xl`, circle→`full` |
 
 ---
 
 ## Best Practices
 
-### Always Fetch First, Then Ask
-
-The correct order is:
-1. Fetch Figma design data
-2. Analyze and summarize
-3. THEN ask for component name (with an informed suggestion)
-
-Never ask for a component name before you know what the design contains.
-
-### Always Query shadcn First
-
-Before implementing, always check the shadcn component's available variants and props. Don't assume—verify.
-
-### Token Consistency Over Pixel Perfection
-
-If matching Figma exactly requires hardcoded values, prefer shadcn tokens with slight visual variance. Document the deviation.
-
-### Leverage Composition
-
-shadcn components are designed for composition. Build complex UIs by combining primitives rather than creating monolithic components.
-
-### Keep shadcn Components Pristine
-
-Never modify files in `@/components/ui/`. Create wrapper components in `@/components/` for customizations.
-
-### Document Mappings
-
-When component or variant mappings aren't obvious, add comments explaining the Figma-to-shadcn translation.
-
-### Always Offer Placement
-
-After every component implementation, ask where to place it. Don't leave the user wondering what to do next.
+1. **Fetch first, then ask** - Analyze Figma design BEFORE suggesting component name
+2. **Query shadcn first** - Check available variants/props before implementing
+3. **Tokens over pixels** - Prefer shadcn tokens with slight variance over hardcoded values
+4. **Leverage composition** - Combine primitives rather than creating monolithic components
+5. **Keep ui/ pristine** - Never modify `@/components/ui/`, create wrappers in `@/components/`
+6. **Document mappings** - Add comments for non-obvious Figma-to-shadcn translations
+7. **Always offer placement** - Ask where to place the finished component
 
 ---
 
@@ -816,22 +652,3 @@ After every component implementation, ask where to place it. Don't leave the use
 | Component name | Map to shadcn component |
 | Variant property | Map to shadcn variant prop |
 
----
-
-## Output Guidelines Summary
-
-**DO:**
-- Fetch Figma data BEFORE suggesting a component name
-- Provide concise component summaries (under 15 lines)
-- List only detected UI components and variants
-- Ask for component name after analyzing the design
-- Ask about placement after finishing
-- Use only Tailwind utility classes for styling
-
-**DON'T:**
-- Ask for component name before fetching Figma data
-- Dump raw Figma JSON or node trees
-- Print verbose metadata
-- Use `calc()` expressions for radius
-- Use arbitrary Tailwind values like `rounded-[8px]`
-- Skip the naming or placement questions

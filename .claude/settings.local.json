@@ -27,7 +27,9 @@
       "Bash(dir /s /b \"C:\\\\Users\\\\rRene\\\\.claude\\\\*.jpeg\")",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Skill(figma-data-extractor)"
+      "Skill(figma-data-extractor)",
+      "mcp__shadcn__list_items_in_registries",
+      "Bash(git push)"
     ]
   },
   "enableAllProjectMcpServers": true,

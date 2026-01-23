@@ -12,7 +12,22 @@
       "mcp__shadcn__get_add_command_for_items",
       "Bash(npx shadcn@latest add:*)",
       "Bash(npm run dev:*)",
-      "mcp__shadcn__view_items_in_registries"
+      "mcp__shadcn__view_items_in_registries",
+      "mcp__figma__get_code_connect_map",
+      "Bash(curl:*)",
+      "Bash(python:*)",
+      "Bash(npx tsc --noEmit --skipLibCheck)",
+      "Skill(skill-creator)",
+      "Bash(set:*)",
+      "Bash(dir /b /s \"%TEMP%\\\\*.png\")",
+      "Bash(findstr:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\rRene\\\\.claude\\\\projects\\\\C--Users-rRene-Coding-shadcn-figma\\\\a8fecb00-aaf9-4722-be65-8e786105437f\\\\tool-results\"\" 2>/dev/null | grep -i png || ls -la \"C:UsersrRene.claude\"\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\rRene\\\\.claude\\\\*.png\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\rRene\\\\.claude\\\\*.jpg\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\rRene\\\\.claude\\\\*.jpeg\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Skill(figma-data-extractor)"
     ]
   },
   "enableAllProjectMcpServers": true,

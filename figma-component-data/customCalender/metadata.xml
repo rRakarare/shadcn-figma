@@ -1,7 +1,0 @@
-<frame id="1:877" name="Container" x="-172" y="-135" width="850" height="492">
-  <instance id="9:72" name="Input" x="10" y="10" width="830" height="36" />
-  <instance id="9:526" name="Calendar 01 Block" x="301" y="56" width="248" height="296" />
-  <instance id="9:345" name="Input OPT" x="317" y="362" width="216" height="36" />
-  <instance id="1:930" name="Button" x="10" y="408" width="830" height="32" />
-  <instance id="1:872" name="Button" x="10" y="450" width="830" height="32" />
-</frame>

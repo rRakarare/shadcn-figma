@@ -29,7 +29,9 @@
       "Bash(git commit:*)",
       "Skill(figma-data-extractor)",
       "mcp__shadcn__list_items_in_registries",
-      "Bash(git push)"
+      "Bash(git push)",
+      "Bash(dir:*)",
+      "Skill(figma-node-tree)"
     ]
   },
   "enableAllProjectMcpServers": true,

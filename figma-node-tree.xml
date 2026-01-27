@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Figma Node Tree: p47Lwdw7tC0AaAT1ynftyS/2143:31510 -->
+<!-- Total nodes: 602 -->
+<node id="2143:31510" name="Aside" type="COMPONENT">
+  <node id="2119:17381" name="Container" type="FRAME">
+    <node id="2119:17433" name="Header" type="FRAME">
+      <node id="2119:17380" name="Title" type="TEXT" />
+      <node id="2119:17420" name="Button" type="INSTANCE" componentId="2232:4726">
+        <node id="I2119:17420;6715:46630" name="Lucide Icons / plus" type="INSTANCE" componentId="2229:8600">
+          <node id="I2119:17420;6715:46630;2706:15853" name="Vector" type="VECTOR" />
+        </node>
+        <node id="I2119:17420;6715:46629" name="Label" type="TEXT" />
+        <node id="I2119:17420;32899:6832" name="Kbd" type="INSTANCE" componentId="2232:4717">
+          <node id="I2119:17420;32899:6832;32899:45164" name="Lucide Icons / arrow-left" type="INSTANCE" componentId="2229:8598">
+            <node id="I2119:17420;32899:6832;32899:45164;2706:13869" name="Vector" type="VECTOR" />
+          </node>
+          <node id="I2119:17420;32899:6832;29794:42965" name="⌘" type="TEXT" />
+          <node id="I2119:17420;32899:6832;32899:45314" name="Lucide Icons / arrow-right" type="INSTANCE" componentId="2229:8596">
+            <node id="I2119:17420;32899:6832;32899:45314;2706:13911" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+        <node id="I2119:17420;6715:46632" name="Lucide Icons / plus" type="INSTANCE" componentId="2229:8600">
+          <node id="I2119:17420;6715:46632;2706:15853" name="Vector" type="VECTOR" />
+        </node>
+      </node>
+    </node>
+    <node id="2119:17382" name="Input" type="INSTANCE" componentId="2019:2399">
+      <node id="I2119:17382;29740:146740" name="Placeholder text" type="TEXT" />
+    </node>
+    <node id="2131:13192" name="Filters" type="FRAME">
+      <node id="2138:21927" name="Button" type="INSTANCE" componentId="2232:4781">
+        <node id="I2138:21927;6724:6599" name="Lucide Icons / arrow-left" type="INSTANCE" componentId="2229:8598">
+          <node id="I2138:21927;6724:6599;2706:13869" name="Vector" type="VECTOR" />
+        </node>
+        <node id="I2138:21927;6724:6600" name="Label" type="TEXT" />
+        <node id="I2138:21927;6724:6601" name="Lucide Icons / chevron-down" type="INSTANCE" componentId="2229:11821">
+          <node id="I2138:21927;6724:6601;2706:13883" name="Vector" type="VECTOR" />
+        </node>
+        <node id="I2138:21927;32899:80150" name="Kbd" type="INSTANCE" componentId="2232:4717">
+          <node id="I2138:21927;32899:80150;32899:45164" name="Lucide Icons / arrow-left" type="INSTANCE" componentId="2229:8598">
+            <node id="I2138:21927;32899:80150;32899:45164;2706:13869" name="Vector" type="VECTOR" />
+          </node>
+          <node id="I2138:21927;32899:80150;29794:42965" name="⌘" type="TEXT" />
+          <node id="I2138:21927;32899:80150;32899:45314" name="Lucide Icons / arrow-right" type="INSTANCE" componentId="2229:8596">
+            <node id="I2138:21927;32899:80150;32899:45314;2706:13911" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+      <node id="2131:13194" name="Button" type="INSTANCE" componentId="2232:4781">
+        <node id="I2131:13194;6724:6599" name="Lucide Icons / arrow-left" type="INSTANCE" componentId="2229:8598">
+          <node id="I2131:13194;6724:6599;2706:13869" name="Vector" type="VECTOR" />
+        </node>
+        <node id="I2131:13194;6724:6600" name="Label" type="TEXT" />
+        <node id="I2131:13194;6724:6601" name="Lucide Icons / list-filter" type="INSTANCE" componentId="2229:10643">
+          <node id="I2131:13194;6724:6601;2706:14251" name="Vector" type="VECTOR" />
+        </node>
+        <node id="I2131:13194;32899:80150" name="Kbd" type="INSTANCE" componentId="2232:4717">
+          <node id="I2131:13194;32899:80150;32899:45164" name="Lucide Icons / arrow-left" type="INSTANCE" componentId="2229:8598">
+            <node id="I2131:13194;32899:80150;32899:45164;2706:13869" name="Vector" type="VECTOR" />
+          </node>
+          <node id="I2131:13194;32899:80150;29794:42965" name="⌘" type="TEXT" />
+          <node id="I2131:13194;32899:80150;32899:45314" name="Lucide Icons / arrow-right" type="INSTANCE" componentId="2229:8596">
+            <node id="I2131:13194;32899:80150;32899:45314;2706:13911" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node id="2119:17044" name="projects" type="FRAME">
+    <node id="2138:5994" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:5994;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:5994;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:5994;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:5994;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:5994;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:12053">
+              <node id="I2138:5994;2138:21162;2706:15081" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:5994;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:5994;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:5994;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:5994;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:5994;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:5994;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:5994;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:5994;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:5994;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:5994;2138:21719;6938:80982" name="Lucide Icons / database" type="INSTANCE" componentId="2229:12352">
+                    <node id="I2138:5994;2138:21719;6938:80982;2706:14985" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:5994;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:5994;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:5994;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:5994;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:5994;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:5994;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:5994;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:5994;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:5994;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:5994;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:5994;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:5994;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:5994;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:5994;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:5994;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:5994;2138:21727;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21727;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:5994;2138:21727;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:5994;2138:21727;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21727;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:5994;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:5994;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:5994;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:5994;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:5994;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:5994;2138:21729;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21729;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:5994;2138:21729;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:5994;2138:21729;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:5994;2138:21729;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:5994;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:5994;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:5994;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:5994;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:5994;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:5994;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:5994;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:5994;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:5994;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:5994;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:5994;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:21947" name="Project" type="INSTANCE" componentId="2138:6228">
+      <node id="I2138:21947;2138:6392" name="border" type="RECTANGLE" />
+      <node id="I2138:21947;2138:20259" name="Project Info" type="FRAME">
+        <node id="I2138:21947;2138:21367" name="Project Details" type="FRAME">
+          <node id="I2138:21947;2138:6232" name="Project Header" type="FRAME">
+            <node id="I2138:21947;2138:6229" name="Project Icon" type="INSTANCE" componentId="2229:8343">
+              <node id="I2138:21947;2138:6229;2706:15911" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:21947;2138:6233" name="Project Name" type="TEXT" />
+            <node id="I2138:21947;2138:6234" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:21947;2138:6234;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:21947;2138:6234;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:21947;2138:6234;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:21947;2138:21888" name="Project Tags" type="FRAME">
+            <node id="I2138:21947;2138:21889" name="Project Tag Container" type="FRAME">
+              <node id="I2138:21947;2138:21890" name="Project Tag" type="FRAME">
+                <node id="I2138:21947;2138:21891" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:21947;2138:21891;6938:80982" name="Lucide Icons / database" type="INSTANCE" componentId="2229:12352">
+                    <node id="I2138:21947;2138:21891;6938:80982;2706:14985" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21947;2138:21891;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:21947;2138:21891;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21891;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21947;2138:21892" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:21947;2138:21892;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:21947;2138:21893" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21947;2138:21893;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:21947;2138:21894" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21947;2138:21894;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:21947;2138:21895" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21947;2138:21895;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:21947;2138:21896" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21947;2138:21896;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:21947;2138:21897" name="Project Tag Container" type="FRAME">
+              <node id="I2138:21947;2138:21898" name="Project Tag" type="FRAME">
+                <node id="I2138:21947;2138:21899" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:21947;2138:21899;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21899;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21947;2138:21899;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:21947;2138:21899;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21899;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21947;2138:21900" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:21947;2138:21900;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21900;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21947;2138:21900;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:21947;2138:21900;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21900;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21947;2138:21901" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:21947;2138:21901;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21901;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21947;2138:21901;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:21947;2138:21901;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21947;2138:21901;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21947;2138:21902" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21947;2138:21902;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:21947;2138:21903" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21947;2138:21903;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:21947;2138:21904" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21947;2138:21904;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:21947;2138:21905" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21947;2138:21905;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:21947;2140:5568" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:21947;2140:5568;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:21947;2140:5568;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:22037" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:22037;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:22037;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:22037;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:22037;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:22037;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:11900">
+              <node id="I2138:22037;2138:21162;2706:13829" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:22037;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:22037;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:22037;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:22037;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:22037;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:22037;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:22037;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22037;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:22037;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:22037;2138:21719;6938:80982" name="Lucide Icons / folder" type="INSTANCE" componentId="2229:10406">
+                    <node id="I2138:22037;2138:21719;6938:80982;2706:14503" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22037;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:22037;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22037;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:22037;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:22037;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22037;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22037;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22037;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22037;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22037;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22037;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22037;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:22037;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22037;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:22037;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22037;2138:21727;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21727;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22037;2138:21727;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22037;2138:21727;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21727;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22037;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:22037;2138:21728;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21728;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22037;2138:21728;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:22037;2138:21728;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21728;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22037;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22037;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22037;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22037;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22037;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22037;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22037;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22037;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22037;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22037;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22037;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22037;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22037;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:22037;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:22037;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:22037;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:22128" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:22128;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:22128;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:22128;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:22128;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:22128;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:11671">
+              <node id="I2138:22128;2138:21162;2706:15003" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:22128;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:22128;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:22128;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:22128;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:22128;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:22128;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:22128;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22128;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:22128;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:22128;2138:21719;6938:80982" name="Lucide Icons / database" type="INSTANCE" componentId="2229:12352">
+                    <node id="I2138:22128;2138:21719;6938:80982;2706:14985" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22128;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:22128;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22128;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:22128;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:22128;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22128;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22128;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22128;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22128;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22128;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22128;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22128;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:22128;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22128;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:22128;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:22128;2138:21727;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21727;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22128;2138:21727;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:22128;2138:21727;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21727;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22128;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22128;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22128;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22128;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22128;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22128;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22128;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22128;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22128;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22128;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22128;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22128;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22128;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22128;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22128;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22128;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22128;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:22128;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:22128;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:22128;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:6038" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:6038;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:6038;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:6038;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:6038;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:6038;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:10120">
+              <node id="I2138:6038;2138:21162;2706:14623" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:6038;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:6038;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:6038;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:6038;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:6038;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:6038;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:6038;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:6038;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:6038;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:6038;2138:21719;6938:80982" name="Lucide Icons / folder" type="INSTANCE" componentId="2229:10406">
+                    <node id="I2138:6038;2138:21719;6938:80982;2706:14503" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:6038;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:6038;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:6038;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:6038;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:6038;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:6038;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:6038;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:6038;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:6038;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:6038;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:6038;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:6038;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:6038;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:6038;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:6038;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:6038;2138:21727;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21727;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:6038;2138:21727;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:6038;2138:21727;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21727;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:6038;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:6038;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:6038;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:6038;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:6038;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:6038;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:6038;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:6038;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:6038;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:6038;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:6038;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:6038;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:6038;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:6038;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:6038;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:6038;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:6038;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:6038;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:6038;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:6038;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:21948" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:21948;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:21948;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:21948;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:21948;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:21948;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:11838">
+              <node id="I2138:21948;2138:21162;2706:15399" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:21948;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:21948;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:21948;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:21948;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:21948;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:21948;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:21948;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:21948;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:21948;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:21948;2138:21719;6938:80982" name="Lucide Icons / folder" type="INSTANCE" componentId="2229:10406">
+                    <node id="I2138:21948;2138:21719;6938:80982;2706:14503" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21948;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:21948;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21948;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:21948;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:21948;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21948;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:21948;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21948;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:21948;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21948;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:21948;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21948;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:21948;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:21948;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:21948;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:21948;2138:21727;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21727;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21948;2138:21727;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:21948;2138:21727;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21727;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21948;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:21948;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21948;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:21948;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21948;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:21948;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:21948;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:21948;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:21948;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:21948;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21948;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:21948;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:21948;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:21948;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21948;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:21948;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:21948;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:21948;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:21948;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:21948;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:22129" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:22129;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:22129;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:22129;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:22129;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:22129;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:11633">
+              <node id="I2138:22129;2138:21162;2706:14073" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:22129;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:22129;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:22129;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:22129;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:22129;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:22129;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:22129;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22129;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:22129;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:22129;2138:21719;6938:80982" name="Lucide Icons / database" type="INSTANCE" componentId="2229:12352">
+                    <node id="I2138:22129;2138:21719;6938:80982;2706:14985" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22129;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:22129;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22129;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:22129;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:22129;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22129;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22129;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22129;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22129;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22129;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22129;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22129;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:22129;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22129;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:22129;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:22129;2138:21727;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21727;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22129;2138:21727;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:22129;2138:21727;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21727;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22129;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22129;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22129;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22129;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22129;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22129;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22129;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22129;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22129;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22129;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22129;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22129;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22129;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22129;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22129;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22129;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22129;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:22129;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:22129;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:22129;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:22038" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:22038;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:22038;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:22038;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:22038;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:22038;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:11696">
+              <node id="I2138:22038;2138:21162;2706:13779" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:22038;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:22038;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:22038;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:22038;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:22038;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:22038;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:22038;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22038;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:22038;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:22038;2138:21719;6938:80982" name="Lucide Icons / folder" type="INSTANCE" componentId="2229:10406">
+                    <node id="I2138:22038;2138:21719;6938:80982;2706:14503" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22038;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:22038;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22038;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:22038;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:22038;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22038;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22038;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22038;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22038;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22038;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22038;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22038;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:22038;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22038;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:22038;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:22038;2138:21727;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21727;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22038;2138:21727;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:22038;2138:21727;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21727;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22038;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22038;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22038;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22038;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22038;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22038;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22038;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22038;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22038;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22038;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22038;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22038;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22038;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22038;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22038;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22038;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22038;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:22038;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:22038;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:22038;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node id="2138:22130" name="Project" type="INSTANCE" componentId="2138:5642">
+      <node id="I2138:22130;2138:21356" name="border" type="RECTANGLE" />
+      <node id="I2138:22130;2138:21160" name="Project Info" type="FRAME">
+        <node id="I2138:22130;2138:21368" name="Project Details" type="FRAME">
+          <node id="I2138:22130;2138:21369" name="Project Header" type="FRAME">
+            <node id="I2138:22130;2138:21162" name="Project Icon" type="INSTANCE" componentId="2229:11842">
+              <node id="I2138:22130;2138:21162;2706:14465" name="Vector" type="VECTOR" />
+            </node>
+            <node id="I2138:22130;2138:21370" name="Project Name" type="TEXT" />
+            <node id="I2138:22130;2138:37633" name="Star Icon" type="INSTANCE" componentId="2229:10809">
+              <node id="I2138:22130;2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION">
+                <node id="I2138:22130;2138:37633;2706:16461" name="Vector" type="VECTOR" />
+                <node id="I2138:22130;2138:37633;2706:16462" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+          <node id="I2138:22130;2138:21716" name="Project Tags" type="FRAME">
+            <node id="I2138:22130;2138:21717" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22130;2138:21718" name="Project Tag" type="FRAME">
+                <node id="I2138:22130;2138:21719" name="Badge" type="INSTANCE" componentId="2232:4575">
+                  <node id="I2138:22130;2138:21719;6938:80982" name="Lucide Icons / database" type="INSTANCE" componentId="2229:12352">
+                    <node id="I2138:22130;2138:21719;6938:80982;2706:14985" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22130;2138:21719;135:1174" name="Label" type="TEXT" />
+                  <node id="I2138:22130;2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22130;2138:21720" name="Separator" type="INSTANCE" componentId="2232:5629">
+                  <node id="I2138:22130;2138:21720;2753:10019" name="Line" type="LINE" />
+                </node>
+                <node id="I2138:22130;2138:21721" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22130;2138:21721;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22130;2138:21722" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22130;2138:21722;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22130;2138:21723" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22130;2138:21723;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22130;2138:21724" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22130;2138:21724;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+            <node id="I2138:22130;2138:21725" name="Project Tag Container" type="FRAME">
+              <node id="I2138:22130;2138:21726" name="Project Tag" type="FRAME">
+                <node id="I2138:22130;2138:21727" name="Badge" type="INSTANCE" componentId="2232:4576">
+                  <node id="I2138:22130;2138:21727;6940:81116" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21727;6940:81116;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22130;2138:21727;136:1182" name="Label" type="TEXT" />
+                  <node id="I2138:22130;2138:21727;6940:81119" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21727;6940:81119;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22130;2138:21728" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22130;2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22130;2138:21728;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22130;2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22130;2138:21729" name="Badge" type="INSTANCE" componentId="2232:4577">
+                  <node id="I2138:22130;2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                  <node id="I2138:22130;2138:21729;136:1190" name="Label" type="TEXT" />
+                  <node id="I2138:22130;2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                    <node id="I2138:22130;2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" />
+                  </node>
+                </node>
+                <node id="I2138:22130;2138:21730" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22130;2138:21730;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+                <node id="I2138:22130;2138:21731" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                  <node id="I2138:22130;2138:21731;2706:14569" name="Vector" type="VECTOR" />
+                </node>
+              </node>
+              <node id="I2138:22130;2138:21732" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22130;2138:21732;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+              <node id="I2138:22130;2138:21733" name="Lucide Icons / check" type="INSTANCE" componentId="2229:10272">
+                <node id="I2138:22130;2138:21733;2706:14569" name="Vector" type="VECTOR" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node id="I2138:22130;2140:5567" name="Button" type="INSTANCE" componentId="2232:4802">
+          <node id="I2138:22130;2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" componentId="2229:12350">
+            <node id="I2138:22130;2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</node>

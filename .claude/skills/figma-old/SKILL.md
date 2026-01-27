@@ -1,6 +1,6 @@
 ---
 name: figma-node-tree
-description: Fetch Figma node tree structure with minimal context. Use when user says "fetch node tree", "get figma structure", "extract figma nodes", or provides a Figma URL and wants just the node hierarchy (not full design context). Outputs node IDs, names, and types as clean XML.
+description: dont use anymore, outdated.
 ---
 
 # Figma Node Tree

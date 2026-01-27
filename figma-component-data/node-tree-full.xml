@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Figma Node Tree (Full): p47Lwdw7tC0AaAT1ynftyS/2138:6227 -->
+<!-- Total nodes: 125 -->
+<!-- Includes: position, size, colors, spacing, typography, layout constraints, grow/align, design system styles -->
+<node id="2138:6227" name="Project" type="COMPONENT_SET" x="-20342.0" y="4363.0" width="526.0" height="280.0" stroke="1.0px #9747ff" cornerRadius="5.0" layoutMode="VERTICAL" spacing="32.0" padding="32.0">
+  <node id="2138:5642" name="Property 1=Default" type="COMPONENT" x="-20310.0" y="4395.0" width="462.0" height="92.0" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH">
+    <node id="2138:21356" name="border" type="RECTANGLE" x="-20318.0" y="4395.0" width="8.0" height="92.0" fills="#16a34a" constraints="v:scale" />
+    <node id="2138:21160" name="Project Info" type="FRAME" x="-20286.0" y="4415.0" width="414.0" height="52.0" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" layoutGrow="1.0">
+      <node id="2138:21368" name="Project Details" type="FRAME" x="-20286.0" y="4415.0" width="362.0" height="52.0" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0">
+        <node id="2138:21369" name="Project Header" type="FRAME" x="-20286.0" y="4415.0" width="362.0" height="20.0" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+          <node id="2138:21162" name="Project Icon" type="INSTANCE" x="-20286.0" y="4417.0" width="16.0" height="16.0" componentId="2229:11696">
+            <node id="I2138:21162;2706:13779" name="Vector" type="VECTOR" x="-20284.7" y="4419.0" width="13.3" height="12.0" stroke="1.3300000429153442px #374151" constraints="h:scale,v:scale" />
+          </node>
+          <node id="2138:21370" name="Project Name" type="TEXT" x="-20266.0" y="4415.0" width="153.0" height="20.0" fills="#374151" styleRefs="text:2229:8621" text="MyAwesomeProject (1)" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+          <node id="2138:37633" name="Star Icon" type="INSTANCE" x="-20109.0" y="4417.0" width="16.0" height="16.0" componentId="2229:10809">
+            <node id="I2138:37633;2706:16460" name="shape" type="BOOLEAN_OPERATION" x="-20107.6" y="4418.5" width="13.2" height="12.6" fills="#ca8a04">
+              <node id="I2138:37633;2706:16461" name="Vector" type="VECTOR" x="-20107.7" y="4418.3" width="13.3" height="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" />
+              <node id="I2138:37633;2706:16462" name="Vector" type="VECTOR" x="-20107.7" y="4418.3" width="13.3" height="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+          </node>
+        </node>
+        <node id="2138:21716" name="Project Tags" type="FRAME" x="-20286.0" y="4447.0" width="283.0" height="20.0" layoutMode="HORIZONTAL" spacing="8.0">
+          <node id="2138:21717" name="Project Tag Container" type="FRAME" x="-20286.0" y="4447.0" width="88.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+            <node id="2138:21718" name="Project Tag" type="FRAME" x="-20286.0" y="4447.0" width="88.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+              <node id="2138:21719" name="Badge" type="INSTANCE" x="-20286.0" y="4447.0" width="79.0" height="20.0" componentId="2232:4575" fills="#0056a7" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21719;6938:80982" name="Lucide Icons / database" type="INSTANCE" x="-20278.0" y="4451.0" width="12.0" height="12.0" componentId="2229:12352">
+                  <node id="I2138:21719;6938:80982;2706:14985" name="Vector" type="VECTOR" x="-20276.5" y="4452.0" width="9.0" height="10.0" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21719;135:1174" name="Label" type="TEXT" x="-20262.0" y="4449.0" width="47.0" height="16.0" fills="#ffffff" styleRefs="text:2229:8703" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21719;6938:81014" name="Lucide Icons / check" type="INSTANCE" x="-20235.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21719;6938:81014;2706:14569" name="Vector" type="VECTOR" x="-20233.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21720" name="Separator" type="INSTANCE" x="-20198.0" y="4447.0" width="0.0" height="20.0" componentId="2232:5629" layoutMode="VERTICAL" layoutAlign="STRETCH">
+                <node id="I2138:21720;2753:10019" name="Line" type="LINE" x="-20198.0" y="4447.0" width="0.0" height="20.0" stroke="1.0px #d1d5db" layoutGrow="1.0" />
+              </node>
+              <node id="2138:21721" name="Lucide Icons / check" type="INSTANCE" x="-20235.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21721;2706:14569" name="Vector" type="VECTOR" x="-20233.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+              <node id="2138:21722" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21722;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+            </node>
+            <node id="2138:21723" name="Lucide Icons / check" type="INSTANCE" x="-20235.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21723;2706:14569" name="Vector" type="VECTOR" x="-20233.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+            <node id="2138:21724" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21724;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+          </node>
+          <node id="2138:21725" name="Project Tag Container" type="FRAME" x="-20190.0" y="4447.0" width="187.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+            <node id="2138:21726" name="Project Tag" type="FRAME" x="-20190.0" y="4447.0" width="187.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+              <node id="2138:21727" name="Badge" type="INSTANCE" x="-20190.0" y="4447.0" width="62.0" height="20.0" componentId="2232:4577" stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21727;6940:81117" name="Lucide Icons / check" type="INSTANCE" x="-20180.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21727;6940:81117;2706:14569" name="Vector" type="VECTOR" x="-20178.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21727;136:1190" name="Label" type="TEXT" x="-20182.0" y="4449.0" width="46.0" height="16.0" fills="#1e293b" styleRefs="text:2229:8703" text="Finance" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21727;6940:81120" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21727;6940:81120;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21728" name="Badge" type="INSTANCE" x="-20119.0" y="4447.0" width="33.0" height="20.0" componentId="2232:4577" stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21728;6940:81117" name="Lucide Icons / check" type="INSTANCE" x="-20109.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21728;6940:81117;2706:14569" name="Vector" type="VECTOR" x="-20107.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21728;136:1190" name="Label" type="TEXT" x="-20111.0" y="4449.0" width="17.0" height="16.0" fills="#1e293b" styleRefs="text:2229:8703" text="HR" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21728;6940:81120" name="Lucide Icons / check" type="INSTANCE" x="-20068.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21728;6940:81120;2706:14569" name="Vector" type="VECTOR" x="-20066.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21729" name="Badge" type="INSTANCE" x="-20077.0" y="4447.0" width="74.0" height="20.0" componentId="2232:4577" stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21729;6940:81117" name="Lucide Icons / check" type="INSTANCE" x="-20067.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21729;6940:81117;2706:14569" name="Vector" type="VECTOR" x="-20065.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21729;136:1190" name="Label" type="TEXT" x="-20069.0" y="4449.0" width="58.0" height="16.0" fills="#1e293b" styleRefs="text:2229:8703" text="Marketing" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21729;6940:81120" name="Lucide Icons / check" type="INSTANCE" x="-20026.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21729;6940:81120;2706:14569" name="Vector" type="VECTOR" x="-20024.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21730" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21730;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+              <node id="2138:21731" name="Lucide Icons / check" type="INSTANCE" x="-20043.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21731;2706:14569" name="Vector" type="VECTOR" x="-20041.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+            </node>
+            <node id="2138:21732" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21732;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+            <node id="2138:21733" name="Lucide Icons / check" type="INSTANCE" x="-20043.0" y="4451.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21733;2706:14569" name="Vector" type="VECTOR" x="-20041.0" y="4454.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node id="2140:5567" name="Button" type="INSTANCE" x="-19908.0" y="4415.0" width="36.0" height="36.0" componentId="2232:4802" cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0">
+        <node id="I2140:5567;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" x="-19898.0" y="4425.0" width="16.0" height="16.0" componentId="2229:12350">
+          <node id="I2140:5567;6724:7781;2706:13617" name="Vector" type="VECTOR" x="-19890.7" y="4427.7" width="1.3" height="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node id="2138:6228" name="Property 1=active" type="COMPONENT" x="-20310.0" y="4519.0" width="462.0" height="92.0" fills="#171717" stroke="1.0px #d1d5db" layoutMode="VERTICAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH">
+    <node id="2138:6392" name="border" type="RECTANGLE" x="-20310.0" y="4519.0" width="8.0" height="92.0" fills="#16a34a" constraints="v:scale" />
+    <node id="2138:20259" name="Project Info" type="FRAME" x="-20286.0" y="4539.0" width="414.0" height="52.0" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH">
+      <node id="2138:21367" name="Project Details" type="FRAME" x="-20286.0" y="4539.0" width="362.0" height="52.0" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0">
+        <node id="2138:6232" name="Project Header" type="FRAME" x="-20286.0" y="4539.0" width="362.0" height="20.0" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+          <node id="2138:6229" name="Project Icon" type="INSTANCE" x="-20286.0" y="4541.0" width="16.0" height="16.0" componentId="2229:11696">
+            <node id="I2138:6229;2706:13779" name="Vector" type="VECTOR" x="-20284.7" y="4543.0" width="13.3" height="12.0" stroke="1.3300000429153442px #374151" constraints="h:scale,v:scale" />
+          </node>
+          <node id="2138:6233" name="Project Name" type="TEXT" x="-20266.0" y="4539.0" width="153.0" height="20.0" fills="#374151" styleRefs="text:2229:8621" text="MyAwesomeProject (1)" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+          <node id="2138:6234" name="Star Icon" type="INSTANCE" x="-20109.0" y="4541.0" width="16.0" height="16.0" componentId="2229:10809">
+            <node id="I2138:6234;2706:16460" name="shape" type="BOOLEAN_OPERATION" x="-20107.6" y="4542.5" width="13.2" height="12.6" fills="#ca8a04">
+              <node id="I2138:6234;2706:16461" name="Vector" type="VECTOR" x="-20107.7" y="4542.3" width="13.3" height="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" />
+              <node id="I2138:6234;2706:16462" name="Vector" type="VECTOR" x="-20107.7" y="4542.3" width="13.3" height="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+          </node>
+        </node>
+        <node id="2138:21888" name="Project Tags" type="FRAME" x="-20286.0" y="4571.0" width="283.0" height="20.0" layoutMode="HORIZONTAL" spacing="8.0">
+          <node id="2138:21889" name="Project Tag Container" type="FRAME" x="-20286.0" y="4571.0" width="88.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+            <node id="2138:21890" name="Project Tag" type="FRAME" x="-20286.0" y="4571.0" width="88.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+              <node id="2138:21891" name="Badge" type="INSTANCE" x="-20286.0" y="4571.0" width="79.0" height="20.0" componentId="2232:4575" fills="#0056a7" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21891;6938:80982" name="Lucide Icons / database" type="INSTANCE" x="-20278.0" y="4575.0" width="12.0" height="12.0" componentId="2229:12352">
+                  <node id="I2138:21891;6938:80982;2706:14985" name="Vector" type="VECTOR" x="-20276.5" y="4576.0" width="9.0" height="10.0" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21891;135:1174" name="Label" type="TEXT" x="-20262.0" y="4573.0" width="47.0" height="16.0" fills="#ffffff" styleRefs="text:2229:8703" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21891;6938:81014" name="Lucide Icons / check" type="INSTANCE" x="-20235.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21891;6938:81014;2706:14569" name="Vector" type="VECTOR" x="-20233.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21892" name="Separator" type="INSTANCE" x="-20198.0" y="4571.0" width="0.0" height="20.0" componentId="2232:5629" layoutMode="VERTICAL" layoutAlign="STRETCH">
+                <node id="I2138:21892;2753:10019" name="Line" type="LINE" x="-20198.0" y="4571.0" width="0.0" height="20.0" stroke="1.0px #d1d5db" layoutGrow="1.0" />
+              </node>
+              <node id="2138:21893" name="Lucide Icons / check" type="INSTANCE" x="-20235.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21893;2706:14569" name="Vector" type="VECTOR" x="-20233.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+              <node id="2138:21894" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21894;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+            </node>
+            <node id="2138:21895" name="Lucide Icons / check" type="INSTANCE" x="-20235.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21895;2706:14569" name="Vector" type="VECTOR" x="-20233.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+            <node id="2138:21896" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21896;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+          </node>
+          <node id="2138:21897" name="Project Tag Container" type="FRAME" x="-20190.0" y="4571.0" width="187.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+            <node id="2138:21898" name="Project Tag" type="FRAME" x="-20190.0" y="4571.0" width="187.0" height="20.0" layoutMode="HORIZONTAL" spacing="9.0">
+              <node id="2138:21899" name="Badge" type="INSTANCE" x="-20190.0" y="4571.0" width="62.0" height="20.0" componentId="2232:4577" stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21899;6940:81117" name="Lucide Icons / check" type="INSTANCE" x="-20180.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21899;6940:81117;2706:14569" name="Vector" type="VECTOR" x="-20178.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21899;136:1190" name="Label" type="TEXT" x="-20182.0" y="4573.0" width="46.0" height="16.0" fills="#1e293b" styleRefs="text:2229:8703" text="Finance" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21899;6940:81120" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21899;6940:81120;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21900" name="Badge" type="INSTANCE" x="-20119.0" y="4571.0" width="33.0" height="20.0" componentId="2232:4577" stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21900;6940:81117" name="Lucide Icons / check" type="INSTANCE" x="-20109.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21900;6940:81117;2706:14569" name="Vector" type="VECTOR" x="-20107.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21900;136:1190" name="Label" type="TEXT" x="-20111.0" y="4573.0" width="17.0" height="16.0" fills="#1e293b" styleRefs="text:2229:8703" text="HR" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21900;6940:81120" name="Lucide Icons / check" type="INSTANCE" x="-20068.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21900;6940:81120;2706:14569" name="Vector" type="VECTOR" x="-20066.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21901" name="Badge" type="INSTANCE" x="-20077.0" y="4571.0" width="74.0" height="20.0" componentId="2232:4577" stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0">
+                <node id="I2138:21901;6940:81117" name="Lucide Icons / check" type="INSTANCE" x="-20067.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21901;6940:81117;2706:14569" name="Vector" type="VECTOR" x="-20065.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+                <node id="I2138:21901;136:1190" name="Label" type="TEXT" x="-20069.0" y="4573.0" width="58.0" height="16.0" fills="#1e293b" styleRefs="text:2229:8703" text="Marketing" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                <node id="I2138:21901;6940:81120" name="Lucide Icons / check" type="INSTANCE" x="-20026.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                  <node id="I2138:21901;6940:81120;2706:14569" name="Vector" type="VECTOR" x="-20024.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+                </node>
+              </node>
+              <node id="2138:21902" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21902;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+              <node id="2138:21903" name="Lucide Icons / check" type="INSTANCE" x="-20043.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+                <node id="I2138:21903;2706:14569" name="Vector" type="VECTOR" x="-20041.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+              </node>
+            </node>
+            <node id="2138:21904" name="Lucide Icons / check" type="INSTANCE" x="-20139.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21904;2706:14569" name="Vector" type="VECTOR" x="-20137.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+            <node id="2138:21905" name="Lucide Icons / check" type="INSTANCE" x="-20043.0" y="4575.0" width="12.0" height="12.0" componentId="2229:10272">
+              <node id="I2138:21905;2706:14569" name="Vector" type="VECTOR" x="-20041.0" y="4578.0" width="8.0" height="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node id="2140:5568" name="Button" type="INSTANCE" x="-19908.0" y="4539.0" width="36.0" height="36.0" componentId="2232:4802" cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0">
+        <node id="I2140:5568;6724:7781" name="Lucide Icons / ellipsis-vertical" type="INSTANCE" x="-19898.0" y="4549.0" width="16.0" height="16.0" componentId="2229:12350">
+          <node id="I2140:5568;6724:7781;2706:13617" name="Vector" type="VECTOR" x="-19890.7" y="4551.7" width="1.3" height="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" />
+        </node>
+      </node>
+    </node>
+  </node>
+</node>

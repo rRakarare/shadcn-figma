@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Figma Node Tree (Full): p47Lwdw7tC0AaAT1ynftyS/2143:31510 -->
+<!-- Total nodes: 602 -->
+<!-- Includes: position, size, colors, spacing, typography, layout constraints, grow/align, design system styles, variables, library info -->
+<c name="Aside" x="-19720" y="4343" w="420" h="1083" fills="#ffffff" layoutMode="VERTICAL" variables="fill:custom/bg-input-30">
+  <f name="Container" x="-19720" y="4343" w="420" h="188" layoutMode="VERTICAL" spacing="16.0" padding="24.0" layoutAlign="STRETCH">
+    <f name="Header" x="-19696" y="4367" w="372" h="36" layoutMode="HORIZONTAL" spacing="24.0" layoutAlign="STRETCH">
+      <t name="Title" x="-19696" y="4369" w="199" h="32" fills="#374151" styleRefs="text:2229:20732" variables="fill:var(--secondary-foreground)" text="Company Knowledge" textStyle="font:Inter; size:20.0; weight:700; lineHeight:32.0; letterSpacing:-0.6000000238418579" />
+      <i name="Button" x="-19462" y="4367" w="138" h="36" lib fills="#0056a7" cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0,16.0,8.0,16.0" styleRefs="effect:2229:8609" variables="fill:var(--primary),spacing:shadow/xs/layer-1/blur,paddingLeft:font/line-height/leading-4,paddingRight:font/line-height/leading-4,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur" effects="drop_shadow">
+        <i name="Lucide Icons / plus" x="-19446" y="4377" w="16" h="16" lib>
+          <v name="Vector" x="-19442.7" y="4380.3" w="9.3" h="9.3" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+        </i>
+        <t name="Label" x="-19422" y="4375" w="82" h="20" fills="#ffffff" styleRefs="text:2229:8621" variables="fill:custom/bg-input-30" text="New Project" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+        <i name="Kbd" x="-19401" y="4375" w="20" h="20" lib fills="#f3f4f6" cornerRadius="5.0" layoutMode="HORIZONTAL" spacing="4.0" padding="4.0" variables="fill:54989:616,spacing:p-1,paddingLeft:p-1,paddingRight:p-1,paddingTop:p-1,paddingBottom:p-1">
+          <i name="Lucide Icons / arrow-left" x="-19397" y="4379" w="12" h="12" lib>
+            <v name="Vector" x="-19394.5" y="4381.5" w="7" h="7" stroke="1.3300000429153442px #6b7280" constraints="h:scale,v:scale" variables="stroke:var(--muted-foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+          <t name="⌘" x="-19397" y="4379" w="12" h="12" fills="#6b7280" styleRefs="text:2229:8630" variables="fill:var(--muted-foreground)" text="⌘" textStyle="font:Inter; size:12.0; weight:500; lineHeight:12.0; alignH:center; alignV:center" />
+          <i name="Lucide Icons / arrow-right" x="-19383" y="4379" w="12" h="12" lib>
+            <v name="Vector" x="-19380.5" y="4381.5" w="7" h="7" stroke="1.3300000429153442px #6b7280" constraints="h:scale,v:scale" variables="stroke:var(--muted-foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+        <i name="Lucide Icons / plus" x="-19401" y="4377" w="16" h="16" lib>
+          <v name="Vector" x="-19396" y="4382" w="14" h="14" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+        </i>
+      </i>
+    </f>
+    <i name="Input" x="-19696" y="4419" w="372" h="36" lib fills="#ffffff" stroke="1.0px #d1d5db" cornerRadius="24.0" layoutMode="VERTICAL" spacing="8.0" padding="8.0,12.0,8.0,12.0" layoutAlign="STRETCH" styleRefs="effect:2007:2141" variables="fill:custom/bg-input-30,stroke:var(--border),spacing:shadow/xs/layer-1/blur,paddingLeft:calc(var(--radius) - 2px),paddingRight:calc(var(--radius) - 2px),paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur" effects="drop_shadow">
+      <t name="Placeholder text" x="-19684" y="4427" w="104" h="20" fills="#6b7280" styleRefs="text:2007:160" variables="fill:var(--muted-foreground)" text="Search projects" textStyle="font:Inter; size:14.0; weight:400; lineHeight:20.0" />
+    </i>
+    <f name="Filters" x="-19696" y="4471" w="372" h="36" layoutMode="HORIZONTAL" spacing="8.0" layoutAlign="STRETCH">
+      <i name="Button" x="-19696" y="4471" w="152" h="36" lib fills="#ffffff" stroke="1.0px #d1d5db" cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0,16.0,8.0,16.0" styleRefs="effect:2229:8609" variables="fill:custom/bg-input-30,stroke:var(--border),spacing:shadow/xs/layer-1/blur,paddingLeft:font/line-height/leading-4,paddingRight:font/line-height/leading-4,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur" effects="drop_shadow">
+        <i name="Lucide Icons / arrow-left" x="-19680" y="4481" w="16" h="16" lib>
+          <v name="Vector" x="-19676.7" y="4484.3" w="9.3" h="9.3" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+        </i>
+        <t name="Label" x="-19680" y="4479" w="96" h="20" fills="#1e293b" styleRefs="text:2229:8621" variables="fill:var(--foreground)" text="All Knowledge" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+        <i name="Lucide Icons / chevron-down" x="-19576" y="4481" w="16" h="16" lib>
+          <v name="Vector" x="-19572" y="4487" w="8" h="4" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+        </i>
+        <i name="Kbd" x="-19635" y="4479" w="20" h="20" lib fills="#f3f4f6" cornerRadius="5.0" layoutMode="HORIZONTAL" spacing="4.0" padding="4.0" variables="fill:54989:616,spacing:p-1,paddingLeft:p-1,paddingRight:p-1,paddingTop:p-1,paddingBottom:p-1">
+          <i name="Lucide Icons / arrow-left" x="-19631" y="4483" w="12" h="12" lib>
+            <v name="Vector" x="-19628.5" y="4485.5" w="7" h="7" stroke="1.3300000429153442px #6b7280" constraints="h:scale,v:scale" variables="stroke:var(--muted-foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+          <t name="⌘" x="-19631" y="4483" w="12" h="12" fills="#6b7280" styleRefs="text:2229:8630" variables="fill:var(--muted-foreground)" text="⌘" textStyle="font:Inter; size:12.0; weight:500; lineHeight:12.0; alignH:center; alignV:center" />
+          <i name="Lucide Icons / arrow-right" x="-19617" y="4483" w="12" h="12" lib>
+            <v name="Vector" x="-19614.5" y="4485.5" w="7" h="7" stroke="1.3300000429153442px #6b7280" constraints="h:scale,v:scale" variables="stroke:var(--muted-foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </i>
+      <i name="Button" x="-19414" y="4471" w="90" h="36" lib fills="#ffffff" stroke="1.0px #d1d5db" cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0,16.0,8.0,16.0" styleRefs="effect:2229:8609" variables="fill:custom/bg-input-30,stroke:var(--border),spacing:shadow/xs/layer-1/blur,paddingLeft:font/line-height/leading-4,paddingRight:font/line-height/leading-4,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur" effects="drop_shadow">
+        <i name="Lucide Icons / arrow-left" x="-19398" y="4481" w="16" h="16" lib>
+          <v name="Vector" x="-19394.7" y="4484.3" w="9.3" h="9.3" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+        </i>
+        <t name="Label" x="-19398" y="4479" w="34" h="20" fills="#1e293b" styleRefs="text:2229:8621" variables="fill:var(--foreground)" text="View" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+        <i name="Lucide Icons / list-filter" x="-19356" y="4481" w="16" h="16" lib>
+          <v name="Vector" x="-19354" y="4485" w="12" h="8" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+        </i>
+        <i name="Kbd" x="-19353" y="4479" w="20" h="20" lib fills="#f3f4f6" cornerRadius="5.0" layoutMode="HORIZONTAL" spacing="4.0" padding="4.0" variables="fill:54989:616,spacing:p-1,paddingLeft:p-1,paddingRight:p-1,paddingTop:p-1,paddingBottom:p-1">
+          <i name="Lucide Icons / arrow-left" x="-19349" y="4483" w="12" h="12" lib>
+            <v name="Vector" x="-19346.5" y="4485.5" w="7" h="7" stroke="1.3300000429153442px #6b7280" constraints="h:scale,v:scale" variables="stroke:var(--muted-foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+          <t name="⌘" x="-19349" y="4483" w="12" h="12" fills="#6b7280" styleRefs="text:2229:8630" variables="fill:var(--muted-foreground)" text="⌘" textStyle="font:Inter; size:12.0; weight:500; lineHeight:12.0; alignH:center; alignV:center" />
+          <i name="Lucide Icons / arrow-right" x="-19335" y="4483" w="12" h="12" lib>
+            <v name="Vector" x="-19332.5" y="4485.5" w="7" h="7" stroke="1.3300000429153442px #6b7280" constraints="h:scale,v:scale" variables="stroke:var(--muted-foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </i>
+    </f>
+  </f>
+  <f name="projects" x="-19720" y="4531" w="420" h="828" stroke="1.0px #d1d5db" layoutMode="VERTICAL" layoutAlign="STRETCH" variables="stroke:var(--border)">
+    <i id="2138:5994" name="Project" x="-19720" y="4531" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="4531" w="4" h="92" fills="#d97706" constraints="v:scale" variables="fill:colors/amber/600" />
+      <f name="Project Info" x="-19696" y="4551" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="4551" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="4551" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="4553" w="16" h="16" lib>
+              <v name="Vector" x="-19694" y="4554.3" w="12" h="13.3" stroke="1.3300000429153442px #b45309" constraints="h:scale,v:scale" variables="stroke:colors/amber/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="4551" w="171" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Operation Neptune Spear" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19501" y="4553" w="16" h="16" lib>
+              <bo name="shape" x="-19499.6" y="4554.5" w="13.2" h="12.6" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19499.7" y="4554.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19499.7" y="4554.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="4583" w="270" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="4583" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="4583" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="4583" w="79" h="20" lib fills="#d97706" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/amber/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / database" x="-19688" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19686.5" y="4588" w="9" h="10" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="4585" w="47" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19608" y="4583" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19608" y="4583" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="4587" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4587" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="4587" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="4587" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19600" y="4583" w="174" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19600" y="4583" w="174" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19600" y="4583" w="62" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="4585" w="52" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Logistics" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19529" y="4583" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19519" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19517" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19521" y="4585" w="64" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Operations" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19478" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19476" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19600" y="4583" w="174" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="4585" w="158" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Research and Development" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="4587" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4587" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19453" y="4587" w="12" h="12" lib>
+                  <v name="Vector" x="-19451" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19549" y="4587" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19453" y="4587" w="12" h="12" lib>
+                <v name="Vector" x="-19451" y="4590" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="4551" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="4561" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="4563.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:21947" name="Project" x="-19720" y="4623" w="420" h="92" componentId="2138:6228" fills="#171717" stroke="1.0px #d1d5db" layoutMode="VERTICAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="fill:54989:809,stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19720" y="4623" w="8" h="92" fills="#dc2626" constraints="v:scale" variables="fill:colors/red/600" />
+      <f name="Project Info" x="-19696" y="4643" w="372" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="4643" w="320" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="4643" w="320" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="4645" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="4647.7" w="13.3" h="10.7" stroke="1.3300000429153442px #b91c1c" constraints="h:scale,v:scale" variables="stroke:colors/red/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="4643" w="220" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Potenzialanalyse Daimler Busses" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19452" y="4645" w="16" h="16" lib>
+              <bo name="shape" x="-19450.6" y="4646.5" w="0" h="0" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19450.7" y="4646.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19450.7" y="4646.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="4675" w="144" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="4675" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="4675" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="4675" w="79" h="20" lib fills="#dc2626" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/red/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / database" x="-19688" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19686.5" y="4680" w="9" h="10" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="4677" w="47" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19608" y="4675" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19608" y="4675" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="4679" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4679" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="4679" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="4679" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19600" y="4675" w="48" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19600" y="4675" w="48" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19600" y="4675" w="62" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="4677" w="74" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Procurement" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19529" y="4675" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19519" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19517" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19521" y="4677" w="76" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Supply Chain" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19478" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19476" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19600" y="4675" w="48" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="4677" w="32" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Sales" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="4679" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4679" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19453" y="4679" w="12" h="12" lib>
+                  <v name="Vector" x="-19451" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19549" y="4679" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19453" y="4679" w="12" h="12" lib>
+                <v name="Vector" x="-19451" y="4682" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19360" y="4643" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19350" y="4653" w="16" h="16" lib>
+            <v name="Vector" x="-19342.7" y="4655.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:22037" name="Project" x="-19720" y="4715" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="4715" w="4" h="92" fills="#4f46e5" constraints="v:scale" variables="fill:colors/indigo/600" />
+      <f name="Project Info" x="-19696" y="4735" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="4735" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="4735" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="4737" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="4738.3" w="13.3" h="13.3" stroke="1.3300000429153442px #4338ca" constraints="h:scale,v:scale" variables="stroke:colors/indigo/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="4735" w="148" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Task Force Red Wings" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19524" y="4737" w="16" h="16" lib>
+              <bo name="shape" x="-19522.6" y="4738.5" w="13.2" h="12.6" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19522.7" y="4738.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19522.7" y="4738.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="4767" w="173" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="4767" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="4767" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="4767" w="73" h="20" lib fills="#4f46e5" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/indigo/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / folder" x="-19688" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19687" y="4772.5" w="10" h="8.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="4769" w="41" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Project" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19614" y="4767" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19614" y="4767" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="4771" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4771" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="4771" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="4771" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19606" y="4767" w="83" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19606" y="4767" w="83" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19606" y="4767" w="62" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19596" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19594" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19598" y="4769" w="47" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Training" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19555" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19553" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19606" y="4767" w="83" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19596" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19594" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19598" y="4769" w="67" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Intelligence" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19555" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19553" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19493" y="4767" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19483" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19481" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19485" y="4769" w="92" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Public Relations" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19442" y="4771" w="12" h="12" lib>
+                    <v name="Vector" x="-19440" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19555" y="4771" w="12" h="12" lib>
+                  <v name="Vector" x="-19553" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19459" y="4771" w="12" h="12" lib>
+                  <v name="Vector" x="-19457" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19555" y="4771" w="12" h="12" lib>
+                <v name="Vector" x="-19553" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19459" y="4771" w="12" h="12" lib>
+                <v name="Vector" x="-19457" y="4774" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="4735" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="4745" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="4747.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:22128" name="Project" x="-19720" y="4807" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="4807" w="4" h="92" fills="#d97706" constraints="v:scale" variables="fill:colors/amber/600" />
+      <f name="Project Info" x="-19696" y="4827" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="4827" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="4827" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="4829" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="4830.3" w="13.3" h="13.3" stroke="1.3300000429153442px #b45309" constraints="h:scale,v:scale" variables="stroke:colors/amber/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="4827" w="162" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Project Viking Conquest" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19510" y="4829" w="16" h="16" lib>
+              <bo name="shape" x="-19508.6" y="4830.5" w="13.2" h="12.6" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19508.7" y="4830.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19508.7" y="4830.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="4859" w="251" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="4859" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="4859" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="4859" w="79" h="20" lib fills="#d97706" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/amber/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / database" x="-19688" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19686.5" y="4864" w="9" h="10" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="4861" w="47" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19608" y="4859" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19608" y="4859" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="4863" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4863" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="4863" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="4863" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19600" y="4859" w="155" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19600" y="4859" w="155" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19600" y="4859" w="155" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="4861" w="139" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Equipment Maintenance" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19529" y="4859" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19519" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19517" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19521" y="4861" w="105" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Technical Support" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19478" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19476" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19487" y="4859" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19477" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19475" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19479" y="4861" w="68" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Compliance" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19436" y="4863" w="12" h="12" lib>
+                    <v name="Vector" x="-19434" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4863" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19453" y="4863" w="12" h="12" lib>
+                  <v name="Vector" x="-19451" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19549" y="4863" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19453" y="4863" w="12" h="12" lib>
+                <v name="Vector" x="-19451" y="4866" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="4827" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="4837" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="4839.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:6038" name="Project" x="-19720" y="4899" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="4899" w="4" h="92" fills="#65a30d" constraints="v:scale" variables="fill:colors/lime/600" />
+      <f name="Project Info" x="-19696" y="4919" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="4919" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="4919" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="4921" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="4923" w="13.3" h="8.7" stroke="1.3300000429153442px #4d7c0f" constraints="h:scale,v:scale" variables="stroke:colors/lime/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="4919" w="171" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Project Black Hawk Down" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19519" y="4921" w="16" h="16" lib>
+              <bo name="shape" x="-19517.6" y="4922.5" w="13.2" h="12.6" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19517.7" y="4922.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19517.7" y="4922.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="4951" w="188" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="4951" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="4951" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="4951" w="73" h="20" lib fills="#65a30d" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/lime/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / folder" x="-19688" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19687" y="4956.5" w="10" h="8.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="4953" w="41" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Project" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19614" y="4951" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19614" y="4951" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="4955" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="4955" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="4955" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="4955" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19606" y="4951" w="98" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19606" y="4951" w="98" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19606" y="4951" w="98" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19596" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19594" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19598" y="4953" w="82" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Cybersecurity" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19555" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19553" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19535" y="4951" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19525" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19523" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19527" y="4953" w="95" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Field Operations" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19484" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19482" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19493" y="4951" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19483" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19481" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19485" y="4953" w="121" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Tactics Development" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19442" y="4955" w="12" h="12" lib>
+                    <v name="Vector" x="-19440" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19555" y="4955" w="12" h="12" lib>
+                  <v name="Vector" x="-19553" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19459" y="4955" w="12" h="12" lib>
+                  <v name="Vector" x="-19457" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19555" y="4955" w="12" h="12" lib>
+                <v name="Vector" x="-19553" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19459" y="4955" w="12" h="12" lib>
+                <v name="Vector" x="-19457" y="4958" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="4919" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="4929" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="4931.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:21948" name="Project" x="-19720" y="4991" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="4991" w="4" h="92" fills="#7c3aed" constraints="v:scale" variables="fill:colors/violet/600" />
+      <f name="Project Info" x="-19696" y="5011" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="5011" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="5011" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="5013" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="5014.3" w="13.3" h="13.3" stroke="1.3300000429153442px #6d28d9" constraints="h:scale,v:scale" variables="stroke:colors/violet/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="5011" w="178" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Mission Enduring Freedom" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19494" y="5013" w="16" h="16" lib>
+              <bo name="shape" x="-19492.6" y="5014.5" w="0" h="0" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19492.7" y="5014.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19492.7" y="5014.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="5043" w="203" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="5043" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="5043" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="5043" w="73" h="20" lib fills="#7c3aed" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/violet/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / folder" x="-19688" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19687" y="5048.5" w="10" h="8.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="5045" w="41" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Project" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19614" y="5043" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19614" y="5043" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="5047" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="5047" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="5047" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="5047" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19606" y="5043" w="113" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19606" y="5043" w="113" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19606" y="5043" w="113" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19596" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19594" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19598" y="5045" w="97" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Mission Planning" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19555" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19553" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19535" y="5043" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19525" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19523" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19527" y="5045" w="105" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Logistical Support" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19484" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19482" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19493" y="5043" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19483" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19481" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19485" y="5045" w="97" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Communications" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19442" y="5047" w="12" h="12" lib>
+                    <v name="Vector" x="-19440" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19555" y="5047" w="12" h="12" lib>
+                  <v name="Vector" x="-19553" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19459" y="5047" w="12" h="12" lib>
+                  <v name="Vector" x="-19457" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19555" y="5047" w="12" h="12" lib>
+                <v name="Vector" x="-19553" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19459" y="5047" w="12" h="12" lib>
+                <v name="Vector" x="-19457" y="5050" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="5011" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="5021" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="5023.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:22129" name="Project" x="-19720" y="5083" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="5083" w="4" h="92" fills="#0d9488" constraints="v:scale" variables="fill:colors/teal/600" />
+      <f name="Project Info" x="-19696" y="5103" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="5103" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="5103" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="5105" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="5109" w="13.3" h="8" stroke="1.3300000429153442px #0f766e" constraints="h:scale,v:scale" variables="stroke:colors/teal/700,strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="5103" w="166" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Exercise Rolling Thunder" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19506" y="5105" w="16" h="16" lib>
+              <bo name="shape" x="-19504.6" y="5106.5" w="13.2" h="12.6" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19504.7" y="5106.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19504.7" y="5106.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="5135" w="212" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="5135" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="5135" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="5135" w="79" h="20" lib fills="#0d9488" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:colors/teal/600,spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / database" x="-19688" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19686.5" y="5140" w="9" h="10" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="5137" w="47" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19608" y="5135" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19608" y="5135" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="5139" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="5139" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="5139" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="5139" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19600" y="5135" w="116" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19600" y="5135" w="116" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19600" y="5135" w="116" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="5137" w="100" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Weapon Systems" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19529" y="5135" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19519" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19517" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19521" y="5137" w="121" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Aircraft Maintenance" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19478" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19476" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19487" y="5135" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19477" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19475" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19479" y="5137" w="99" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Naval Operations" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19436" y="5139" w="12" h="12" lib>
+                    <v name="Vector" x="-19434" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="5139" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19453" y="5139" w="12" h="12" lib>
+                  <v name="Vector" x="-19451" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19549" y="5139" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19453" y="5139" w="12" h="12" lib>
+                <v name="Vector" x="-19451" y="5142" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="5103" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="5113" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="5115.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:22038" name="Project" x="-19720" y="5175" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="5175" w="4" h="92" fills="#16a34a" constraints="v:scale" variables="fill:colors/green/600" />
+      <f name="Project Info" x="-19696" y="5195" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="5195" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="5195" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="5197" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="5199" w="13.3" h="12" stroke="1.3300000429153442px #374151" constraints="h:scale,v:scale" variables="stroke:var(--secondary-foreground),strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="5195" w="181" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Operation Anaconda Strike" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19491" y="5197" w="16" h="16" lib>
+              <bo name="shape" x="-19489.6" y="5198.5" w="0" h="0" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19489.7" y="5198.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19489.7" y="5198.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="5227" w="201" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="5227" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="5227" w="82" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="5227" w="73" h="20" lib fills="#6b7280" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--muted-foreground),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / folder" x="-19688" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19687" y="5232.5" w="10" h="8.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="5229" w="41" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Project" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19614" y="5227" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19614" y="5227" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="5231" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="5231" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="5231" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="5231" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19606" y="5227" w="111" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19606" y="5227" w="111" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19606" y="5227" w="111" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19596" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19594" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19598" y="5229" w="95" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Base Operations" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19555" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19553" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19535" y="5227" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19525" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19523" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19527" y="5229" w="125" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Emergency Response" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19484" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19482" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19493" y="5227" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19483" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19481" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19485" y="5229" w="108" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Fleet Management" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19442" y="5231" w="12" h="12" lib>
+                    <v name="Vector" x="-19440" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19555" y="5231" w="12" h="12" lib>
+                  <v name="Vector" x="-19553" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19459" y="5231" w="12" h="12" lib>
+                  <v name="Vector" x="-19457" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19555" y="5231" w="12" h="12" lib>
+                <v name="Vector" x="-19553" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19459" y="5231" w="12" h="12" lib>
+                <v name="Vector" x="-19457" y="5234" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="5195" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="5205" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="5207.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+    <i id="2138:22130" name="Project" x="-19720" y="5267" w="462" h="92" componentId="2138:5642" stroke="1.0px #d1d5db" layoutMode="HORIZONTAL" spacing="16.0" padding="20.0,24.0,20.0,24.0" layoutAlign="STRETCH" variables="stroke:var(--border),spacing:font/line-height/leading-4">
+      <r name="border" x="-19728" y="5267" w="4" h="92" fills="#16a34a" constraints="v:scale" variables="fill:colors/green/600" />
+      <f name="Project Info" x="-19696" y="5287" w="414" h="52" layoutMode="HORIZONTAL" spacing="16.0" layoutAlign="STRETCH" variables="spacing:font/line-height/leading-4">
+        <f name="Project Details" x="-19696" y="5287" w="362" h="52" layoutMode="VERTICAL" spacing="12.0" layoutGrow="1.0" variables="spacing:calc(var(--radius) - 2px)">
+          <f name="Project Header" x="-19696" y="5287" w="362" h="20" layoutMode="HORIZONTAL" spacing="4.0" layoutAlign="STRETCH">
+            <i name="Project Icon" x="-19696" y="5289" w="16" h="16" lib>
+              <v name="Vector" x="-19694.7" y="5290.3" w="13.3" h="13.3" stroke="1.3300000429153442px #0056a7" constraints="h:scale,v:scale" variables="stroke:var(--primary),strokeWeight:custom/icon/border-width" />
+            </i>
+            <t name="Project Name" x="-19676" y="5287" w="158" h="20" fills="#374151" styleRefs="text:2229:8621" variables="fill:var(--secondary-foreground)" text="Mission Guardian Angel" textStyle="font:Inter; size:14.0; weight:500; lineHeight:20.0" />
+            <i name="Star Icon" x="-19514" y="5289" w="16" h="16" lib>
+              <bo name="shape" x="-19512.6" y="5290.5" w="13.2" h="12.6" fills="#ca8a04" variables="fill:colors/yellow/600">
+                <v name="Vector" x="-19512.7" y="5290.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" cornerRadius="0.5" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+                <v name="Vector" x="-19512.7" y="5290.3" w="13.3" h="12.7" fills="#1e293b" stroke="1.0px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground)" />
+              </bo>
+            </i>
+          </f>
+          <f name="Project Tags" x="-19696" y="5319" w="197" h="20" layoutMode="HORIZONTAL" spacing="8.0">
+            <f name="Project Tag Container" x="-19696" y="5319" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19696" y="5319" w="88" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19696" y="5319" w="79" h="20" lib fills="#0056a7" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--primary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / database" x="-19688" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19686.5" y="5324" w="9" h="10" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19672" y="5321" w="47" h="16" fills="#ffffff" styleRefs="text:2229:8703" variables="fill:custom/bg-input-30" text="Datasilo" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19645" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19643" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #ffffff" constraints="h:scale,v:scale" variables="stroke:custom/bg-input-30,strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Separator" x="-19608" y="5319" w="0" h="20" lib layoutMode="VERTICAL" layoutAlign="STRETCH" variables="spacing:6989:10,paddingLeft:6989:10,paddingRight:6989:10,paddingTop:6989:10,paddingBottom:6989:10">
+                  <ln name="Line" x="-19608" y="5319" w="0" h="20" stroke="1.0px #d1d5db" layoutGrow="1.0" variables="stroke:var(--border),strokeWeight:border-width/w-100" />
+                </i>
+                <i name="Lucide Icons / check" x="-19645" y="5323" w="12" h="12" lib>
+                  <v name="Vector" x="-19643" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="5323" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19645" y="5323" w="12" h="12" lib>
+                <v name="Vector" x="-19643" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19549" y="5323" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+            <f name="Project Tag Container" x="-19600" y="5319" w="101" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+              <f name="Project Tag" x="-19600" y="5319" w="101" h="20" layoutMode="HORIZONTAL" spacing="9.0">
+                <i name="Badge" x="-19600" y="5319" w="101" h="20" lib fills="#e5e7eb" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="fill:var(--secondary),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19590" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19588" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19592" y="5321" w="85" h="16" fills="#374151" styleRefs="text:2229:8703" variables="fill:var(--secondary-foreground)" text="Ground Forces" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19549" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19547" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19529" y="5319" w="33" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19519" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19517" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19521" y="5321" w="71" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Surveillance" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19478" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19476" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Badge" x="-19487" y="5319" w="74" h="20" lib stroke="1.0px #d1d5db" cornerRadius="12.0" layoutMode="HORIZONTAL" spacing="4.0" padding="2.0,8.0,2.0,8.0" variables="stroke:var(--border),spacing:p-1,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:p-0,5,paddingBottom:p-0,5">
+                  <i name="Lucide Icons / check" x="-19477" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19475" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                  <t name="Label" x="-19479" y="5321" w="117" h="16" fills="#1e293b" styleRefs="text:2229:8703" variables="fill:var(--foreground)" text="Diplomatic Relations" textStyle="font:Inter; size:12.0; weight:500; lineHeight:16.0" />
+                  <i name="Lucide Icons / check" x="-19436" y="5323" w="12" h="12" lib>
+                    <v name="Vector" x="-19434" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                  </i>
+                </i>
+                <i name="Lucide Icons / check" x="-19549" y="5323" w="12" h="12" lib>
+                  <v name="Vector" x="-19547" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+                <i name="Lucide Icons / check" x="-19453" y="5323" w="12" h="12" lib>
+                  <v name="Vector" x="-19451" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+                </i>
+              </f>
+              <i name="Lucide Icons / check" x="-19549" y="5323" w="12" h="12" lib>
+                <v name="Vector" x="-19547" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+              <i name="Lucide Icons / check" x="-19453" y="5323" w="12" h="12" lib>
+                <v name="Vector" x="-19451" y="5326" w="8" h="5.5" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+              </i>
+            </f>
+          </f>
+        </f>
+        <i name="Button" x="-19318" y="5287" w="36" h="36" lib cornerRadius="32.0" layoutMode="HORIZONTAL" spacing="8.0" padding="8.0" variables="spacing:shadow/xs/layer-1/blur,paddingLeft:shadow/xs/layer-1/blur,paddingRight:shadow/xs/layer-1/blur,paddingTop:shadow/xs/layer-1/blur,paddingBottom:shadow/xs/layer-1/blur">
+          <i name="Lucide Icons / ellipsis-vertical" x="-19308" y="5297" w="16" h="16" lib>
+            <v name="Vector" x="-19300.7" y="5299.7" w="1.3" h="10.7" fills="#1e293b" stroke="1.3300000429153442px #1e293b" constraints="h:scale,v:scale" variables="fill:var(--foreground),stroke:var(--foreground),strokeWeight:custom/icon/border-width" />
+          </i>
+        </i>
+      </f>
+    </i>
+  </f>
+</c>

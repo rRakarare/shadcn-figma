@@ -1,0 +1,33 @@
+{
+  "root": {
+    "node_id": "2143:31510",
+    "name": "Aside",
+    "figma_url": "https://www.figma.com/design/p47Lwdw7tC0AaAT1ynftyS/?node-id=2143-31510"
+  },
+  "components": {
+    "2143:31510": {
+      "name": "Aside",
+      "figma_url": "https://www.figma.com/design/p47Lwdw7tC0AaAT1ynftyS/?node-id=2143-31510",
+      "depends_on": [
+        "2138:6227"
+      ],
+      "depended_by": []
+    },
+    "2138:6227": {
+      "name": "Project",
+      "figma_url": "https://www.figma.com/design/p47Lwdw7tC0AaAT1ynftyS/?node-id=2138-6227",
+      "depends_on": [],
+      "depended_by": [
+        "2143:31510"
+      ]
+    }
+  },
+  "build_waves": [
+    [
+      "2138:6227"
+    ],
+    [
+      "2143:31510"
+    ]
+  ]
+}

@@ -31,7 +31,8 @@
       "mcp__shadcn__list_items_in_registries",
       "Bash(git push)",
       "Bash(dir:*)",
-      "Skill(figma-node-tree)"
+      "Skill(figma-node-tree)",
+      "WebSearch"
     ]
   },
   "enableAllProjectMcpServers": true,

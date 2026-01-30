@@ -61,6 +61,16 @@ User provides Figma URL
 
 ## Step-by-Step Workflow
 
+### Step 0: Detect Output Directory
+
+Before creating tasks, determine the correct output path based on the project's path alias configuration:
+
+1. Read `tsconfig.json` and check `compilerOptions.paths`
+2. If `@/*` maps to `./src/*`, use output path: `src/components/figmaUI/<Component>.tsx`
+3. Otherwise use: `components/figmaUI/<Component>.tsx`
+
+Store this base path for all component outputs. The import path should always use the alias format (e.g., `@/components/figmaUI/ComponentName`).
+
 ### Step 1: Parse Figma URL
 
 Extract from URL `https://figma.com/design/:fileKey/:fileName?node-id=X-Y`:
@@ -119,9 +129,28 @@ This outputs `dependencies.json`:
 }
 ```
 
+### Step 3.5: Check for Existing Components
+
+Before creating tasks, check if any components already exist:
+
+```bash
+# List existing components
+ls src/components/figmaUI/*.tsx 2>/dev/null || ls components/figmaUI/*.tsx 2>/dev/null
+```
+
+For each component in the dependency graph:
+1. Convert Figma name to PascalCase (e.g., `<Assistant Card>` → `AssistantCard`)
+2. Check if `{base_path}/{ComponentName}.tsx` exists
+3. If exists:
+   - Mark as "existing" - do NOT spawn subagent for it
+   - Other components can still depend on it (imports will work)
+   - Print: `✓ {ComponentName} already exists - skipping build`
+
+**Modified task creation:** Only create tasks for components that don't exist. Components that DO exist should still be tracked so parent components know to import them.
+
 ### Step 4: Create Tasks for Each Component
 
-Use `TaskCreate` to create a task for each component:
+Use `TaskCreate` to create a task for each component that doesn't already exist:
 
 ```
 For each component in dependency graph:
@@ -132,7 +161,7 @@ For each component in dependency graph:
       - Name: <name>
       - Figma URL: <figma_url>
       - Node ID: <node_id>
-      - Output: components/figmaUI/<ComponentName>.tsx
+      - Output: <detected_base_path>/<ComponentName>.tsx  (e.g., src/components/figmaUI/ComponentName.tsx)
       - Subcomponents: <list of depends_on names, or "None">
     activeForm: "Building <ComponentName>"
 ```
@@ -197,14 +226,17 @@ When a wave completes, replace placeholders in parent components:
 
 ```bash
 python ./.claude/skills/figma-component-builder/scripts/replace_placeholder.py \
-  components/figmaUI/Project.tsx \
+  "src/components/figmaUI/Project.tsx" \
   --child-name "ProjectHeader" \
-  --child-path "@/components/figmaUI/ProjectHeader"
+  --child-path '@/components/figmaUI/ProjectHeader'
 ```
+
+**IMPORTANT (Windows/Git Bash):** Use single quotes around paths containing `@` to prevent shell expansion. The `@` symbol can be misinterpreted by Git Bash on Windows.
 
 This:
 1. Adds import: `import { ProjectHeader } from "@/components/figmaUI/ProjectHeader"`
-2. Replaces: `{/* @figma-placeholder name="ProjectHeader" ... */}` with `<ProjectHeader />`
+2. Replaces **ALL** `{/* @figma-placeholder name="ProjectHeader" ... */}` with `<ProjectHeader />`
+   - If a component uses the same child 12 times, all 12 placeholders are replaced
 
 **Run this for each child that just completed, updating all parents that use it.**
 
@@ -221,15 +253,26 @@ After all waves complete:
 
 3. Report summary:
    ```
-   Built X components:
+   Built X components (Y skipped):
    - Aside.tsx (root)
    - Project.tsx
    - ProjectHeader.tsx
-   - ProjectTag.tsx
+   - ✓ ProjectTag.tsx (already existed)
    ```
 
 ## Output Structure
 
+If `tsconfig.json` has `@/*` -> `./src/*`:
+```
+src/components/figmaUI/
+├── Aside.tsx           # Root component (imports Project)
+├── Project.tsx         # Imports ProjectHeader, ProjectTag
+├── ProjectHeader.tsx   # Leaf component
+├── ProjectTag.tsx      # Leaf component
+└── index.ts            # Optional barrel export
+```
+
+Otherwise:
 ```
 components/figmaUI/
 ├── Aside.tsx           # Root component (imports Project)
@@ -238,6 +281,19 @@ components/figmaUI/
 ├── ProjectTag.tsx      # Leaf component
 └── index.ts            # Optional barrel export
 ```
+
+## Monitoring Subagent Progress
+
+### How to see running subagents:
+1. **TaskList**: Shows all tasks with status (`pending`, `in_progress`, `completed`)
+2. **During execution**: The CLI shows spinner with task's `activeForm` text
+3. **Background mode**: Use `run_in_background: true` then poll with `TaskOutput`
+
+### Why components may run sequentially:
+- Components in DIFFERENT waves MUST run sequentially (dependencies)
+- Components in the SAME wave CAN run in parallel
+- Example: If Wave 0 has [A, B, C], all 3 launch in parallel
+- Example: If Wave 0 has [A] and Wave 1 has [B], they run sequentially because B depends on A
 
 ## Scripts Reference
 
@@ -354,7 +410,7 @@ Task(subagent_type="component-builder", prompt="Build Project with placeholder f
 
 **Step 7:** Replace placeholder in Project
 ```bash
-python .../replace_placeholder.py components/figmaUI/Project.tsx --child-name ProjectTag --child-path @/components/figmaUI/ProjectTag
+python .../replace_placeholder.py "src/components/figmaUI/Project.tsx" --child-name ProjectTag --child-path '@/components/figmaUI/ProjectTag'
 ```
 
 **Step 8:** Wave 1 completes, launch Wave 2
@@ -364,13 +420,21 @@ Task(subagent_type="component-builder", prompt="Build Aside with placeholder for
 
 **Step 9:** Replace placeholder in Aside
 ```bash
-python .../replace_placeholder.py components/figmaUI/Aside.tsx --child-name Project --child-path @/components/figmaUI/Project
+python .../replace_placeholder.py "src/components/figmaUI/Aside.tsx" --child-name Project --child-path '@/components/figmaUI/Project'
 ```
 
 **Step 10:** Done! Report:
 ```
-Built 3 components:
-- components/figmaUI/Aside.tsx (root)
-- components/figmaUI/Project.tsx
-- components/figmaUI/ProjectTag.tsx
+Built 3 components (0 skipped):
+- src/components/figmaUI/Aside.tsx (root)
+- src/components/figmaUI/Project.tsx
+- src/components/figmaUI/ProjectTag.tsx
+```
+
+**Example with existing components:**
+```
+Built 2 components (1 skipped):
+- src/components/figmaUI/Aside.tsx (root)
+- src/components/figmaUI/Project.tsx
+- ✓ src/components/figmaUI/ProjectTag.tsx (already existed)
 ```

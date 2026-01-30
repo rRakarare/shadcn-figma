@@ -233,6 +233,8 @@ def main():
         print("(All instances are from external libraries like shadcn/ui or Lucide icons)")
 
     print()
+    print("=" * 60)
+    print()
 
 
 if __name__ == "__main__":

@@ -22,6 +22,20 @@ You receive:
 
 ## Workflow
 
+### Step 0: Detect Project Configuration
+
+Before generating code, check the project's TypeScript configuration:
+
+1. Read `tsconfig.json` to find path aliases:
+   - If `compilerOptions.paths` has `@/*` -> `./src/*`, use `@/` for imports
+   - Example: `import { cn } from "@/lib/utils"` (NOT `"../../src/lib/utils"`)
+
+2. Check `compilerOptions.jsx`:
+   - If `react-jsx` or `react-jsxdev`, do NOT add `import React from 'react'`
+   - Only import React if using classic JSX transform
+
+3. Use detected aliases for all internal imports (e.g., `@/lib/utils`, `@/components/ui/button`)
+
 ### Step 1: Fetch Design Context
 
 Call the Figma MCP tool to get the component code:
@@ -108,7 +122,11 @@ The component file should follow this structure:
  * Generated: 2024-01-15 10:30
  */
 
-import React from 'react';
+// Only import React if tsconfig.jsx is NOT "react-jsx" or "react-jsxdev"
+// import React from 'react';
+
+// Use path aliases from tsconfig (e.g., @/lib/utils, NOT ../../src/lib/utils)
+import { cn } from "@/lib/utils";
 // ... other imports
 
 export default function ComponentName() {

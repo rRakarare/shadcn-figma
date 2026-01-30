@@ -25,11 +25,53 @@ from pathlib import Path
 from typing import Optional, Tuple
 
 
+def fix_git_bash_path(path: str) -> str:
+    """Fix Git Bash path expansion on Windows.
+
+    Git Bash expands @/ to @C:/Program Files/Git/ which breaks imports.
+    This detects and fixes the mangled pattern.
+    """
+    # Pattern: @C:/Program Files/Git/ or @/c/Program Files/Git/
+    # Also handles: @/c/Program Files/Git/ (unix-style path in Git Bash)
+    mangled_pattern = r'^@[A-Za-z]?:?/?(?:[a-zA-Z]/)?[Pp]rogram [Ff]iles/[Gg]it/'
+    if re.match(mangled_pattern, path, re.IGNORECASE):
+        # Extract the actual path after the Git installation prefix
+        # e.g., "@C:/Program Files/Git/components/..." -> "@/components/..."
+        match = re.search(r'[Gg]it/(.+)$', path)
+        if match:
+            return '@/' + match.group(1)
+    return path
+
+
+def get_placeholder_pattern(child_name: str) -> str:
+    """Get the regex pattern for placeholder comments."""
+    # Match: {/* @figma-placeholder name="ChildName" nodeId="..." */}
+    return rf'\{{/\*\s*@figma-placeholder\s+name="{re.escape(child_name)}"\s+nodeId="[^"]*"\s*\*/\}}'
+
+
 def find_placeholder(code: str, child_name: str) -> Optional[re.Match]:
     """Find a placeholder comment for the given child name."""
-    # Match: {/* @figma-placeholder name="ChildName" nodeId="..." */}
-    pattern = rf'\{{/\*\s*@figma-placeholder\s+name="{re.escape(child_name)}"\s+nodeId="[^"]*"\s*\*/\}}'
+    pattern = get_placeholder_pattern(child_name)
     return re.search(pattern, code)
+
+
+def count_placeholders(code: str, child_name: str) -> int:
+    """Count how many placeholders exist for the given child name."""
+    pattern = get_placeholder_pattern(child_name)
+    return len(re.findall(pattern, code))
+
+
+def replace_all_placeholders(code: str, child_name: str) -> Tuple[str, int]:
+    """
+    Replace ALL placeholder comments for the given child name.
+
+    Returns:
+        Tuple of (modified_code, replacement_count)
+    """
+    pattern = get_placeholder_pattern(child_name)
+    component_usage = f'<{child_name} />'
+    new_code, count = re.subn(pattern, component_usage, code)
+    return new_code, count
 
 
 def find_import_section(code: str) -> Tuple[int, int]:
@@ -99,9 +141,9 @@ def replace_placeholder(
     child_name: str,
     child_path: str,
     in_place: bool = True
-) -> str:
+) -> Tuple[str, int]:
     """
-    Replace a placeholder with an actual component.
+    Replace ALL placeholders with an actual component.
 
     Args:
         parent_path: Path to the parent component file
@@ -110,30 +152,29 @@ def replace_placeholder(
         in_place: If True, modify file in place. If False, return modified code.
 
     Returns:
-        Modified code string
+        Tuple of (modified_code, replacement_count)
     """
+    # Fix Git Bash path mangling on Windows
+    child_path = fix_git_bash_path(child_path)
+
     with open(parent_path, 'r', encoding='utf-8') as f:
         code = f.read()
 
-    # Find the placeholder
-    placeholder_match = find_placeholder(code, child_name)
+    # Count and replace ALL placeholders
+    code, replacement_count = replace_all_placeholders(code, child_name)
 
-    if not placeholder_match:
+    if replacement_count == 0:
         print(f"Warning: No placeholder found for {child_name} in {parent_path}", file=sys.stderr)
-        return code
+        return code, 0
 
-    # Replace placeholder with component usage
-    component_usage = f'<{child_name} />'
-    code = code[:placeholder_match.start()] + component_usage + code[placeholder_match.end():]
-
-    # Add import
+    # Add import (only once, regardless of how many placeholders were replaced)
     code = add_import(code, child_name, child_path)
 
     if in_place:
         with open(parent_path, 'w', encoding='utf-8') as f:
             f.write(code)
 
-    return code
+    return code, replacement_count
 
 
 def main():
@@ -163,7 +204,7 @@ def main():
         print(f"Error: File not found: {args.parent}", file=sys.stderr)
         sys.exit(1)
 
-    result = replace_placeholder(
+    result, replacement_count = replace_placeholder(
         args.parent,
         args.child_name,
         args.child_path,
@@ -173,7 +214,7 @@ def main():
     if args.dry_run:
         print(result)
     else:
-        print(f"Replaced placeholder for {args.child_name} in {args.parent}")
+        print(f"Replaced {replacement_count} placeholder(s) for {args.child_name} in {args.parent}")
         print(f"  Added import from: {args.child_path}")
 
 

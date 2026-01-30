@@ -34,7 +34,8 @@
       "Skill(figma-node-tree)",
       "WebSearch",
       "Bash(npx tsc:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(ls:*)"
     ]
   },
   "enableAllProjectMcpServers": true,

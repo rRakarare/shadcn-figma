@@ -82,12 +82,31 @@ Extract from URL `https://figma.com/design/:fileKey/:fileName?node-id=X-Y`:
 Run the find_custom_instances script to discover all custom (non-library) components:
 
 ```bash
-python ./.claude/skills/find-custom-instances/scripts/find_custom_instances.py <file_key> <node_id>
+python ./.claude/skills/figma-component-builder/scripts/find_custom_instances.py <file_key> <node_id>
 ```
 
-This outputs:
-- Input component name and URL
-- List of all custom instances with names and Figma URLs
+**MANDATORY OUTPUT:** After running the script, you MUST present the results to the user in a nicely formatted, clickable summary. Use this exact format with markdown links:
+
+---
+
+**Component Tree Summary**
+
+| Component | Figma Link |
+|-----------|------------|
+| **RootComponentName** (root) | [Open in Figma](https://figma.com/design/...) |
+| ChildComponent1 | [Open in Figma](https://figma.com/design/...) |
+| ChildComponent2 | [Open in Figma](https://figma.com/design/...) |
+
+*Found X custom instance(s) to build.*
+
+---
+
+**Format rules:**
+- Root component is bolded with "(root)" label
+- Each row has the component name and a clickable "Open in Figma" link
+- Use the exact URLs from the script output
+- Include the count of custom instances at the bottom
+- If no custom instances found, show only the root component and note: "*No custom child components found. Building root only.*"
 
 **If no custom instances found:** Proceed to build only the root component using the `component-builder` subagent directly.
 

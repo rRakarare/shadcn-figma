@@ -1,156 +1,128 @@
 ---
 name: component-builder
-description: Builds a single React/Tailwind component from a Figma URL. Use when building individual components as part of a larger component tree. Receives component info, fetches design context via MCP, processes the code, and saves to the output path.
-tools: Read, Write, Edit, Bash, Glob, Grep, mcp__figma__get_design_context, mcp__figma__get_variable_defs, mcp__figma__get_screenshot
+description: Builds a single React/shadcn component from a Figma URL. Use when building individual components as part of a larger component tree. Receives component info, fetches design context via MCP, processes the code, and saves to the output path.
+tools: Read, Write, Edit, Bash, Glob, Grep, mcp__figma__get_design_context, mcp__figma__get_variable_defs, mcp__figma__get_screenshot, mcp__shadcn__search_items_in_registries, mcp__shadcn__view_items_in_registries, mcp__shadcn__get_item_examples_from_registries, mcp__shadcn__get_add_command_for_items
 model: inherit
 ---
 
 # Component Builder Subagent
 
-You build a single React/Tailwind component from Figma.
+You build a single React component from Figma, **prioritizing shadcn/ui components**.
 
 ## Input
 
 You receive:
-- **Component name**: The name for this component
-- **Figma URL**: The Figma URL for this component
-- **File key**: Extracted from the URL
-- **Node ID**: Extracted from the URL
-- **Output path**: Where to save the component (e.g., `components/figmaUI/ProjectHeader.tsx`)
-- **Subcomponents**: List of child components to leave as placeholders (may be empty for leaf components)
-- **Task ID**: Your assigned task ID to mark as completed when done
+- **Component name**, **Figma URL**, **File key**, **Node ID**
+- **Output path**: Where to save (e.g., `components/figmaUI/ProjectHeader.tsx`)
+- **Subcomponents**: Child components to leave as placeholders
+- **Task ID**: Mark as completed when done
 
 ## Workflow
 
-### Step 0: Detect Project Configuration
-
-Before generating code, check the project's TypeScript configuration:
-
-1. Read `tsconfig.json` to find path aliases:
-   - If `compilerOptions.paths` has `@/*` -> `./src/*`, use `@/` for imports
-   - Example: `import { cn } from "@/lib/utils"` (NOT `"../../src/lib/utils"`)
-
-2. Check `compilerOptions.jsx`:
-   - If `react-jsx` or `react-jsxdev`, do NOT add `import React from 'react'`
-   - Only import React if using classic JSX transform
-
-3. Use detected aliases for all internal imports (e.g., `@/lib/utils`, `@/components/ui/button`)
-
-### Step 1: Fetch Design Context
-
-Call the Figma MCP tool to get the component code:
+### Step 1: Fetch Design Context & Screenshot
 
 ```
 mcp__figma__get_design_context(fileKey="<file_key>", nodeId="<node_id>")
+mcp__figma__get_screenshot(fileKey="<file_key>", nodeId="<node_id>")
 ```
 
-### Step 2: Handle Large Responses
+**Keep the screenshot accessible** - it's your source of truth for visual validation.
 
-If the response exceeds token limits, it will be auto-saved to a temp file. In that case:
+### Step 2: Detect Project Configuration
 
-1. The system will tell you the temp file path
-2. Copy it to a working location:
-   ```bash
-   cp "<temp_path>" "./figma-output/temp-design-context.json"
-   ```
-3. Process with the figma-to-code script:
-   ```bash
-   python ./.claude/skills/figma-to-code/scripts/process_figma_code.py \
-     ./figma-output/temp-design-context.json \
-     ./figma-output/temp-variables.json \
-     "<output_path>" \
-     --figma-url "<figma_url>" \
-     --component "<component_name>" \
-     --strip-assets
-   ```
+Read `tsconfig.json`:
+- Use `@/` path aliases if configured (e.g., `@/components/ui/button`)
+- Skip `import React` if `jsx: "react-jsx"` or `"react-jsxdev"`
 
-### Step 3: Get Variables (Optional)
+### Step 3: Identify shadcn Components
 
-If needed for design tokens:
+Scan the design context for `data-name` attributes:
+
+**shadcn matches**: If `data-name` matches shadcn component names (button, card, input, dialog, etc.), use the shadcn component:
 ```
-mcp__figma__get_variable_defs(fileKey="<file_key>", nodeId="<node_id>")
+mcp__shadcn__search_items_in_registries(registries=["@shadcn"], query="<component-name>")
+mcp__shadcn__view_items_in_registries(items=["@shadcn/<component-name>"])
+```
+Install if needed via the add command from MCP.
+
+**Lucide icons**: If `data-name` contains "lucide", use `lucide-react`:
+```tsx
+import { IconName } from "lucide-react";  // data-name="lucide-icon-name" -> <IconName />
 ```
 
-### Step 4: Process the Code
+### Step 4: Apply Design Tokens
 
-If the response was small enough to receive directly:
-1. Extract the code from the MCP response
-2. Clean up the code (remove asset constants if needed)
-3. Add a header comment with source info
+**Use shadcn/Tailwind color tokens** - never hex codes:
+- Variables like `primary`, `foreground`, `accent`, `border`, `muted`, `destructive`, `card`, `sidebar`, etc.
+- Apply with correct prefix: `bg-primary`, `text-foreground`, `border-border`, `fill-accent`, `stroke-muted`
+- Opacity: `bg-primary/20`, `text-muted-foreground/50`
 
-### Step 5: Insert Placeholders (If Has Subcomponents)
+**Use standard Tailwind values** (not pixel values):
+- Border radius: `rounded-sm`, `rounded-md`, `rounded-lg` (default: `md`)
+- Shadows: `shadow-sm`, `shadow-md`, `shadow-lg`
+- Spacing: Use Tailwind scale (`p-4`, `gap-2`, `m-6`)
 
-If you were given a list of subcomponents to leave as placeholders:
+**Use Tailwind colors** instead of hex codes: `text-teal-600`, `bg-slate-100`
 
-```bash
-python ./.claude/skills/figma-component-builder/scripts/insert_placeholders.py \
-  "<output_path>" \
-  --subcomponent-names "SubComp1,SubComp2" \
-  --subcomponent-node-ids "123:456,789:012"
-```
+### Step 5: Build the Component
 
-This replaces the subcomponent JSX with placeholder comments:
+1. Extract code from MCP response
+2. Replace matching elements with shadcn components
+3. Replace lucide references with proper icon imports
+4. Apply correct design tokens and Tailwind classes
+5. Add header comment with Figma source info
+
+### Step 6: Insert Placeholders (If Has Subcomponents)
+
+Replace subcomponent JSX with placeholders:
 ```tsx
 {/* @figma-placeholder name="SubComp1" nodeId="123:456" */}
 ```
 
-### Step 6: Save the Component
+### Step 7: Visual Validation
 
-Write the processed code to the output path. Ensure:
-- The directory exists (create if needed)
-- The file has proper TypeScript/React structure
-- Imports are at the top
-- Component is exported
+Compare your output against the Figma screenshot:
+- Layout matches the design
+- Colors use correct tokens
+- Spacing and sizing are accurate
+- shadcn components render correctly
 
-### Step 7: Mark Task Complete
+### Step 8: Save & Complete
 
-Use TaskUpdate to mark your assigned task as completed:
+Write to output path, then mark task complete:
 ```
 TaskUpdate(taskId="<task_id>", status="completed")
 ```
 
 ## Output Format
 
-The component file should follow this structure:
-
 ```tsx
 /**
  * Generated from Figma
- * Source: https://figma.com/design/...
- * Node: 123:456
- * Component: ComponentName
- * Generated: 2024-01-15 10:30
+ * Source: <figma_url>
+ * Node: <node_id>
  */
 
-// Only import React if tsconfig.jsx is NOT "react-jsx" or "react-jsxdev"
-// import React from 'react';
-
-// Use path aliases from tsconfig (e.g., @/lib/utils, NOT ../../src/lib/utils)
-import { cn } from "@/lib/utils";
-// ... other imports
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Settings } from "lucide-react";
 
 export default function ComponentName() {
   return (
-    <div>
-      {/* Component content */}
+    <Card className="p-4 bg-card border-border">
+      <Button variant="default" className="bg-primary text-primary-foreground">
+        <Settings className="w-4 h-4" />
+        Click me
+      </Button>
       {/* @figma-placeholder name="ChildComponent" nodeId="789:012" */}
-    </div>
+    </Card>
   );
 }
 ```
 
-## Error Handling
-
-If you encounter errors:
-1. Log the error clearly
-2. Do NOT mark the task as completed
-3. The main orchestrator will handle retries
-
 ## Important Notes
 
-- You are building ONE component only
-- Do not try to build child components - leave them as placeholders
-- The main orchestrator will handle dependency coordination
-- Focus on accurate translation of the Figma design to code
-- Use Tailwind CSS classes as provided by Figma MCP
-- Do not add extra libraries or dependencies unless absolutely necessary
+- **Prioritize shadcn components** over raw HTML/Tailwind
+- Use shadcn MCP to learn correct component API and props
+- One component only - leave children as placeholders
+- Validate visually against the screenshot before completing

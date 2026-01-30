@@ -1,33 +1,33 @@
 {
   "root": {
-    "node_id": "4067:5566",
-    "name": "Frame 101",
-    "figma_url": "https://www.figma.com/design/VO9w8SEvI6yY3uFgDuLfwo/?node-id=4067-5566"
+    "node_id": "2143:31510",
+    "name": "Aside",
+    "figma_url": "https://www.figma.com/design/p47Lwdw7tC0AaAT1ynftyS/?node-id=2143-31510"
   },
   "components": {
-    "4067:5566": {
-      "name": "Frame 101",
-      "figma_url": "https://www.figma.com/design/VO9w8SEvI6yY3uFgDuLfwo/?node-id=4067-5566",
+    "2143:31510": {
+      "name": "Aside",
+      "figma_url": "https://www.figma.com/design/p47Lwdw7tC0AaAT1ynftyS/?node-id=2143-31510",
       "depends_on": [
-        "4012:1586"
+        "2138:6227"
       ],
       "depended_by": []
     },
-    "4012:1586": {
-      "name": "<Assistant Card>",
-      "figma_url": "https://www.figma.com/design/VO9w8SEvI6yY3uFgDuLfwo/?node-id=4012-1586",
+    "2138:6227": {
+      "name": "Project",
+      "figma_url": "https://www.figma.com/design/p47Lwdw7tC0AaAT1ynftyS/?node-id=2138-6227",
       "depends_on": [],
       "depended_by": [
-        "4067:5566"
+        "2143:31510"
       ]
     }
   },
   "build_waves": [
     [
-      "4012:1586"
+      "2138:6227"
     ],
     [
-      "4067:5566"
+      "2143:31510"
     ]
   ]
 }
